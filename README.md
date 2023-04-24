@@ -1,1 +1,1 @@
-"# aplikace-skolni-rozvrh-android" 
+# aplikace-skolni-rozvrh-android
