@@ -1,0 +1,50 @@
+<animated-vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <aapt:attr name="android:drawable">
+        <vector
+            android:name="vector"
+            android:width="24dp"
+            android:height="24dp"
+            android:viewportWidth="1000"
+            android:viewportHeight="1000">
+            <group
+                android:name="plus_to_x"
+                android:pivotX="500"
+                android:pivotY="500">
+                <path
+                    android:name="path"
+                    android:pathData="M 490 50 L 510 50 C 523.256 50 535.982 55.271 545.355 64.645 C 554.729 74.018 560 86.744 560 100 L 560 900 C 560 913.256 554.729 925.982 545.355 935.355 C 535.982 944.729 523.256 950 510 950 L 490 950 C 476.744 950 464.018 944.729 454.645 935.355 C 445.271 925.982 440 913.256 440 900 L 440 100 C 440 86.744 445.271 74.018 454.645 64.645 C 464.018 55.271 476.744 50 490 50"
+                    android:fillColor="@color/toggle_x"
+                    android:strokeWidth="1"/>
+                <path
+                    android:name="path_1"
+                    android:pathData="M 100 440 L 900 440 C 913.256 440 925.982 445.271 935.355 454.645 C 944.729 464.018 950 476.744 950 490 L 950 510 C 950 523.256 944.729 535.982 935.355 545.355 C 925.982 554.729 913.256 560 900 560 L 100 560 C 86.744 560 74.018 554.729 64.645 545.355 C 55.271 535.982 50 523.256 50 510 L 50 490 C 50 476.744 55.271 464.018 64.645 454.645 C 74.018 445.271 86.744 440 100 440"
+                    android:fillColor="@color/toggle_x"
+                    android:strokeWidth="1"/>
+            </group>
+        </vector>
+    </aapt:attr>
+    <target android:name="plus_to_x">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:propertyName="rotation"
+                android:duration="300"
+                android:valueFrom="0"
+                android:valueTo="135"
+                android:valueType="floatType"
+                android:interpolator="@android:interpolator/fast_out_slow_in"/>
+        </aapt:attr>
+    </target>
+    <target android:name="plus_to_x">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:propertyName="strokeColor"
+                android:duration="300"
+                android:valueFrom="@color/toggle_plus"
+                android:valueTo="@color/toggle_x"
+                android:valueType="intType"
+                android:interpolator="@android:interpolator/linear" />
+        </aapt:attr>
+    </target>
+</animated-vector>

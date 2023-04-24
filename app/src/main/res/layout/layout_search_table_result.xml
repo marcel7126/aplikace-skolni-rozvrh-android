@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clSearch"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <HorizontalScrollView
+        android:id="@+id/horScroll"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/include0"
+                layout="@layout/prefab_subject_tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                app:layout_constraintEnd_toStartOf="@+id/include1"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/include100" />
+
+            <include
+                android:id="@+id/include100"
+                layout="@layout/prefab_time_tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toStartOf="@+id/include101"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <include
+                android:id="@+id/include1"
+                layout="@layout/prefab_subject_tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                app:layout_constraintEnd_toStartOf="@+id/include2"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/include0"
+                app:layout_constraintTop_toTopOf="@+id/include0" />
+
+            <include
+                android:id="@+id/include101"
+                layout="@layout/prefab_time_tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                app:layout_constraintEnd_toStartOf="@+id/include102"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/include100"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <include
+                android:id="@+id/include2"
+                layout="@layout/prefab_subject_tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                app:layout_constraintEnd_toStartOf="@+id/include3"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/include1"
+                app:layout_constraintTop_toTopOf="@+id/include0" />
+
+            <include
+                android:id="@+id/include102"
+                layout="@layout/prefab_time_tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                app:layout_constraintEnd_toStartOf="@+id/include103"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/include101"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <include
+                android:id="@+id/include3"
+                layout="@layout/prefab_subject_tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                app:layout_constraintEnd_toStartOf="@+id/include4"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/include2"
+                app:layout_constraintTop_toTopOf="@+id/include0" />
+
+            <include
+                android:id="@+id/include103"
+                layout="@layout/prefab_time_tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                app:layout_constraintEnd_toStartOf="@+id/include104"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/include102"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <include
+                android:id="@+id/include4"
+                layout="@layout/prefab_subject_tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                app:layout_constraintEnd_toStartOf="@+id/include5"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/include3"
+                app:layout_constraintTop_toTopOf="@+id/include0" />
+
+            <include
+                android:id="@+id/include104"
+                layout="@layout/prefab_time_tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                app:layout_constraintEnd_toStartOf="@+id/include105"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/include103"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <include
+                android:id="@+id/include5"
+                layout="@layout/prefab_subject_tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                app:layout_constraintEnd_toStartOf="@+id/include6"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/include4"
+                app:layout_constraintTop_toTopOf="@+id/include0" />
+
+            <include
+                android:id="@+id/include105"
+                layout="@layout/prefab_time_tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                app:layout_constraintEnd_toStartOf="@+id/include106"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/include104"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <include
+                android:id="@+id/include6"
+                layout="@layout/prefab_subject_tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                app:layout_constraintEnd_toStartOf="@+id/include7"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/include5"
+                app:layout_constraintTop_toTopOf="@+id/include0" />
+
+            <include
+                android:id="@+id/include106"
+                layout="@layout/prefab_time_tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                app:layout_constraintEnd_toStartOf="@+id/include107"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/include105"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <include
+                android:id="@+id/include7"
+                layout="@layout/prefab_subject_tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                app:layout_constraintEnd_toStartOf="@+id/include8"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/include6"
+                app:layout_constraintTop_toTopOf="@+id/include0" />
+
+            <include
+                android:id="@+id/include107"
+                layout="@layout/prefab_time_tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                app:layout_constraintEnd_toStartOf="@+id/include108"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/include106"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <include
+                android:id="@+id/include8"
+                layout="@layout/prefab_subject_tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                app:layout_constraintEnd_toStartOf="@+id/include9"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/include7"
+                app:layout_constraintTop_toTopOf="@+id/include0" />
+
+            <include
+                android:id="@+id/include108"
+                layout="@layout/prefab_time_tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                app:layout_constraintEnd_toStartOf="@+id/include109"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/include107"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <include
+                android:id="@+id/include9"
+                layout="@layout/prefab_subject_tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                app:layout_constraintEnd_toStartOf="@+id/include10"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/include8"
+                app:layout_constraintTop_toTopOf="@+id/include0" />
+
+            <include
+                android:id="@+id/include109"
+                layout="@layout/prefab_time_tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                app:layout_constraintEnd_toStartOf="@+id/include110"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/include108"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <include
+                android:id="@+id/include10"
+                layout="@layout/prefab_subject_tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/include9"
+                app:layout_constraintTop_toTopOf="@+id/include0" />
+
+            <include
+                android:id="@+id/include110"
+                layout="@layout/prefab_time_tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/include109"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <include
+                android:id="@+id/include11"
+                layout="@layout/prefab_subject_tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/include0"
+                app:layout_constraintStart_toStartOf="@+id/include0"
+                app:layout_constraintTop_toBottomOf="@+id/include0" />
+
+            <include
+                android:id="@+id/include12"
+                layout="@layout/prefab_subject_tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/include1"
+                app:layout_constraintStart_toStartOf="@+id/include1"
+                app:layout_constraintTop_toBottomOf="@+id/include1" />
+
+            <include
+                android:id="@+id/include13"
+                layout="@layout/prefab_subject_tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/include2"
+                app:layout_constraintStart_toStartOf="@+id/include2"
+                app:layout_constraintTop_toBottomOf="@+id/include2" />
+
+            <include
+                android:id="@+id/include14"
+                layout="@layout/prefab_subject_tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/include3"
+                app:layout_constraintStart_toStartOf="@+id/include3"
+                app:layout_constraintTop_toBottomOf="@+id/include3" />
+
+            <include
+                android:id="@+id/include15"
+                layout="@layout/prefab_subject_tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/include4"
+                app:layout_constraintStart_toStartOf="@+id/include4"
+                app:layout_constraintTop_toBottomOf="@+id/include4" />
+
+            <include
+                android:id="@+id/include16"
+                layout="@layout/prefab_subject_tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/include5"
+                app:layout_constraintStart_toStartOf="@+id/include5"
+                app:layout_constraintTop_toBottomOf="@+id/include5" />
+
+            <include
+                android:id="@+id/include17"
+                layout="@layout/prefab_subject_tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/include6"
+                app:layout_constraintStart_toStartOf="@+id/include6"
+                app:layout_constraintTop_toBottomOf="@+id/include6" />
+
+            <include
+                android:id="@+id/include18"
+                layout="@layout/prefab_subject_tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/include7"
+                app:layout_constraintStart_toStartOf="@+id/include7"
+                app:layout_constraintTop_toBottomOf="@+id/include7" />
+
+            <include
+                android:id="@+id/include19"
+                layout="@layout/prefab_subject_tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/include8"
+                app:layout_constraintStart_toStartOf="@+id/include8"
+                app:layout_constraintTop_toBottomOf="@+id/include8" />
+
+            <include
+                android:id="@+id/include20"
+                layout="@layout/prefab_subject_tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/include9"
+                app:layout_constraintStart_toStartOf="@+id/include9"
+                app:layout_constraintTop_toBottomOf="@+id/include9" />
+
+            <include
+                android:id="@+id/include21"
+                layout="@layout/prefab_subject_tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/include10"
+                app:layout_constraintStart_toStartOf="@+id/include10"
+                app:layout_constraintTop_toBottomOf="@+id/include10" />
+
+            <include
+                android:id="@+id/include22"
+                layout="@layout/prefab_subject_tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/include11"
+                app:layout_constraintStart_toStartOf="@+id/include11"
+                app:layout_constraintTop_toBottomOf="@+id/include11" />
+
+            <include
+                android:id="@+id/include23"
+                layout="@layout/prefab_subject_tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/include12"
+                app:layout_constraintStart_toStartOf="@+id/include12"
+                app:layout_constraintTop_toBottomOf="@+id/include12" />
+
+            <include
+                android:id="@+id/include24"
+                layout="@layout/prefab_subject_tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/include13"
+                app:layout_constraintStart_toStartOf="@+id/include13"
+                app:layout_constraintTop_toBottomOf="@+id/include13" />
+
+            <include
+                android:id="@+id/include25"
+                layout="@layout/prefab_subject_tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/include14"
+                app:layout_constraintStart_toStartOf="@+id/include14"
+                app:layout_constraintTop_toBottomOf="@+id/include14" />
+
+            <include
+                android:id="@+id/include26"
+                layout="@layout/prefab_subject_tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/include15"
+                app:layout_constraintStart_toStartOf="@+id/include15"
+                app:layout_constraintTop_toBottomOf="@+id/include15" />
+
+            <include
+                android:id="@+id/include27"
+                layout="@layout/prefab_subject_tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/include16"
+                app:layout_constraintStart_toStartOf="@+id/include16"
+                app:layout_constraintTop_toBottomOf="@+id/include16" />
+
+            <include
+                android:id="@+id/include28"
+                layout="@layout/prefab_subject_tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/include17"
+                app:layout_constraintStart_toStartOf="@+id/include17"
+                app:layout_constraintTop_toBottomOf="@+id/include17" />
+
+            <include
+                android:id="@+id/include29"
+                layout="@layout/prefab_subject_tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/include18"
+                app:layout_constraintStart_toStartOf="@+id/include18"
+                app:layout_constraintTop_toBottomOf="@+id/include18" />
+
+            <include
+                android:id="@+id/include30"
+                layout="@layout/prefab_subject_tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/include19"
+                app:layout_constraintStart_toStartOf="@+id/include19"
+                app:layout_constraintTop_toBottomOf="@+id/include19" />
+
+            <include
+                android:id="@+id/include31"
+                layout="@layout/prefab_subject_tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/include20"
+                app:layout_constraintStart_toStartOf="@+id/include20"
+                app:layout_constraintTop_toBottomOf="@+id/include20" />
+
+            <include
+                android:id="@+id/include32"
+                layout="@layout/prefab_subject_tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/include21"
+                app:layout_constraintStart_toStartOf="@+id/include21"
+                app:layout_constraintTop_toBottomOf="@+id/include21" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </HorizontalScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- BASIC COLORS -->
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+    <!-- PRIMARY COLORS -->
+    <color name="marcel_Primary">#18227c</color>
+    <color name="marcel_Primary_Light">#514aac</color>
+    <color name="marcel_Primary_Dark">#00004f</color>
+    <color name="marcel_Text_on_Primary">#ffffff</color>
+
+    <color name="primary_80light">#d1d3e5</color>
+    <color name="primary_70light">#babdd8</color>
+
+    <color name="n_alpha">#f1f2f9</color>
+    <color name="n_beta">#f8f8fc</color>
+    <color name="n_gamma">#eaebf5</color>
+    <color name="n_background">#e4e5f1</color>
+    <color name="n_ripple">#949ad1</color>
+    <color name="n_on_color">#191c1d</color>
+
+    <!-- SECONDARY COLORS -->
+    <color name="marcel_Secondary">#00acc1</color>
+    <color name="marcel_Secondary_Light">#5ddef4</color>
+    <color name="marcel_Secondary_Dark">#007c91</color>
+    <color name="marcel_Text_on_Secondary">#000000</color>
+
+    <!-- COLOR FOR TESTING PURPOSES -->
+    <color name="unused">#ff00ff</color>
+
+    <!-- TRANSPARENT COLOR -->
+    <color name="transparent">@android:color/transparent</color>
+
+    <!-- LIGHT THEME COLORS -->
+    <color name="light_7">#e5e5e5</color>
+
+    <!-- DARK THEME COLORS -->
+    <color name="dark_0">#000000</color> <!-- STATUS BAR -->
+    <color name="dark_1">#1f1f1f</color> <!-- ACTION BAR -->
+    <color name="dark_2">#121212</color> <!-- ACTIVITY BACKGROUND -->
+    <color name="dark_3">#1d1d1d</color> <!-- ON SCREEN ITEM BACKGROUND -->
+    <color name="dark_7">#292929</color> <!-- OTHER -->
+
+    <!-- BLACK TINTS -->
+    <color name="grayscale_10">#1a1a1a</color>
+    <color name="grayscale_20">#333333</color>
+    <color name="grayscale_30">#4d4d4d</color>
+    <color name="grayscale_40">#666666</color>
+    <color name="grayscale_50">#808080</color>
+    <color name="grayscale_60">#999999</color>
+    <color name="grayscale_70">#b3b3b3</color>
+    <color name="grayscale_80">#cccccc</color>
+    <color name="grayscale_90">#e6e6e6</color>
+
+    <color name="white_smoke">#F5F5F5</color>
+
+    <!-- HIGHLIGHTS -->
+    <color name="suplovano_yellow_dark">#cca300</color>
+    <color name="suplovano_yellow_light">#ffcc00</color>
+    <color name="suplovano_yellow_tint">#ffdb4d</color>
+    <color name="suplovano_yellow_shade">#b38f00</color>
+
+    <color name="suplovano_primary_dark">#18227c</color>
+    <color name="suplovano_primary_light">#8c91be</color>
+    <color name="suplovano_primary_tint">#5d64a3</color>
+    <color name="suplovano_primary_shade">#111857</color>
+
+    <color name="suplovano_secondary_dark">#00acc1</color>
+    <color name="suplovano_secondary_light">#5ddef4</color>
+    <color name="suplovano_secondary_tint">#4dc5d4</color>
+    <color name="suplovano_secondary_shade">#007887</color>
+secondary_
+    <!-- PRIMARY TINTS -->
+    <color name="primary_tint_10">#2f3889</color>
+    <color name="primary_tint_20">#464e96</color>
+    <color name="primary_tint_30">#5d64a3</color>
+    <color name="primary_tint_40">#747ab0</color>
+    <color name="primary_tint_50">#8c91be</color>
+    <color name="primary_tint_60">#a3a7cb</color>
+    <color name="primary_tint_70">#babdd8</color>
+    <color name="primary_tint_80">#d1d3e5</color>
+    <color name="primary_tint_90">#e8e9f2</color>
+
+    <!-- OTHER -->
+
+    <!-- TILE COLORS -->
+    <color name="tile_tt">#4064E1</color>
+    <color name="tile_ott">#E1B820</color>
+    <color name="tile_odp">#C85064</color>
+
+    <color name="tile_presun">#ffffff</color>
+    <color name="tile_spoj">#ffffff</color>
+    <color name="tile_misto">#ffffff</color>
+
+    <!-- +/x icon colors -->
+    <color name="toggle_x">#9b0000</color>
+    <color name="toggle_plus">#1b5e20</color>
+
+    <color name="splash_bg">#0c2f7f</color>
+
+    <!--<color name="divider_color">#4c56af</color>-->
+    <color name="divider_color">#c2c5e0</color>
+
+    <color name="color_for_a_purpose_i_forgor">#bec2e4</color>
+
+</resources>

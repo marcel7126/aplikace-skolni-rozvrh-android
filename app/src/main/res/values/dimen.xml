@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="table_margin">4dp</dimen>
+    <dimen name="table_corners">8dp</dimen>
+    <dimen name="table_tile_size">64dp</dimen>
+    <dimen name="table_tile_gap">4dp</dimen>
+    <dimen name="tile_stroke">0dp</dimen>
+</resources>

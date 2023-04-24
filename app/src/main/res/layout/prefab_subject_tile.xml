@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clTile"
+    android:layout_width="64dp"
+    android:layout_height="64dp"
+    android:maxWidth="64dp"
+    android:maxHeight="64dp"
+    android:background="@drawable/tileBackgroundDrawable"
+
+    android:elevation="0dp"
+    android:minWidth="64dp"
+    android:minHeight="64dp">
+
+
+    <Space
+        android:id="@+id/helpEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/helpStart"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Space
+        android:id="@+id/helpStart"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/helpEnd"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!-- TODO change 0dp to wrap content -->
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tvTileSubject"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=""
+        android:textStyle="bold"
+        android:maxLines="3"
+        app:layout_constraintBottom_toTopOf="@+id/tvTileClassroom"
+        app:layout_constraintEnd_toStartOf="@+id/tvTileDash"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/helpStart"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- TODO change 0dp to wrap content -->
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tvTileTeacher"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/transparent"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/tvTileSubject"
+        app:layout_constraintEnd_toStartOf="@+id/helpEnd"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvTileDash"
+        app:layout_constraintTop_toTopOf="@+id/tvTileSubject" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tvTileNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@color/transparent"
+        android:text=""
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTileSubject" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tvNoteIcon"
+        android:drawableStart="@drawable/ic_short_text_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:background="@color/transparent"
+        android:text=""
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTileSubject" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tvTileClassroom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background="@color/transparent"
+        android:text=""
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/helpEnd"
+        app:layout_constraintTop_toBottomOf="@+id/tvTileSubject" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tvTileDash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTileSubject"
+        app:layout_constraintEnd_toStartOf="@+id/tvTileTeacher"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvTileSubject"
+        app:layout_constraintTop_toTopOf="@+id/tvTileSubject" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

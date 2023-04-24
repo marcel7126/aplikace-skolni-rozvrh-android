@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:andoid="http://schemas.android.com/apk/res/android">
+    <item andoid:drawable="@color/white" />
+
+    <item andoid:drawable="@drawable/splash_dpgrozvrh_branding" andoid:gravity="center" />
+</layer-list>

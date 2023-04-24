@@ -1,0 +1,1029 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvSkupina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Skupina"
+                android:drawableStart="@drawable/ic_groups_24"
+                android:drawablePadding="8dp"
+                app:layout_constraintStart_toStartOf="@+id/rgSkupina"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvSkupina" />
+
+            <RadioGroup
+                android:id="@+id/rgSkupina"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvSkupina"
+                app:singleSelection="true">
+
+                <RadioButton
+                    android:id="@+id/rbSkupinaA"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:button="@null"
+                    android:drawableStart="@drawable/ic_groups_24"
+                    android:drawablePadding="8dp"
+                    android:drawableEnd="?android:attr/listChoiceIndicatorSingle"
+                    android:tag="A"
+                    android:text="@string/group_a" />
+
+                <RadioButton
+                    android:id="@+id/rbSkupinaB"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:button="@null"
+                    android:drawableStart="@drawable/ic_groups_24"
+                    android:drawablePadding="8dp"
+                    android:drawableEnd="?android:attr/listChoiceIndicatorSingle"
+                    android:tag="B"
+                    android:text="@string/group_b" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tvTelocvik"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/tv"
+                app:layout_constraintStart_toStartOf="@+id/rgTelocvik"
+                app:layout_constraintTop_toBottomOf="@id/rgSkupina" />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTelocvik" />
+
+            <RadioGroup
+                android:id="@+id/rgTelocvik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTelocvik"
+                app:singleSelection="true">
+
+                <RadioButton
+                    android:id="@+id/rbTvChlapci"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableStart="@drawable/ic_man_24"
+                    android:drawablePadding="8dp"
+                    android:button="@null"
+                    android:drawableEnd="?android:attr/listChoiceIndicatorSingle"
+                    android:tag="Tvc"
+                    android:text="@string/pe_boys" />
+
+                <RadioButton
+                    android:id="@+id/rbTvDivky"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableStart="@drawable/ic_woman_24"
+                    android:drawablePadding="8dp"
+                    android:button="@null"
+                    android:drawableEnd="?android:attr/listChoiceIndicatorSingle"
+                    android:tag="Tvd"
+                    android:text="@string/pe_girls" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tvDruhyJazyk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Další jazyk"
+                android:drawableStart="@drawable/ic_translate_20"
+                android:drawablePadding="8dp"
+                app:layout_constraintStart_toStartOf="@+id/rgJazyk"
+                app:layout_constraintTop_toBottomOf="@+id/rgTelocvik" />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvDruhyJazyk" />
+
+            <RadioGroup
+                android:id="@+id/rgJazyk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvDruhyJazyk"
+                app:singleSelection="true">
+
+                <RadioButton
+                    android:id="@+id/rbNemcina"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:button="@null"
+                    android:drawableStart="@drawable/ic_translate_24"
+                    android:drawablePadding="8dp"
+                    android:drawableEnd="?android:attr/listChoiceIndicatorSingle"
+                    android:tag="Nj"
+                    android:text="@string/nj" />
+
+                <RadioButton
+                    android:id="@+id/rbSpanelstina"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:button="@null"
+                    android:drawableStart="@drawable/ic_translate_24"
+                    android:drawablePadding="8dp"
+                    android:drawableEnd="?android:attr/listChoiceIndicatorSingle"
+                    android:tag="Šj"
+                    android:text="@string/sj" />
+
+                <RadioButton
+                    android:id="@+id/rbFrancouzstina"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:button="@null"
+                    android:drawableStart="@drawable/ic_translate_24"
+                    android:drawablePadding="8dp"
+                    android:drawableEnd="?android:attr/listChoiceIndicatorSingle"
+                    android:tag="Fj"
+                    android:text="@string/fj" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tvHumanitniPredmenty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Humanitní předměty"
+                app:layout_constraintStart_toStartOf="@+id/cbDejepis"
+                app:layout_constraintTop_toBottomOf="@+id/rgJazyk" />
+
+            <CheckBox
+                android:id="@+id/cbDejepis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_help_center_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="D"
+                android:text="@string/d"
+                app:layout_constraintTop_toBottomOf="@+id/tvHumanitniPredmenty" />
+
+            <CheckBox
+                android:id="@+id/cbHistorickySeminar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_help_center_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="Hs"
+                android:text="@string/hs"
+                app:layout_constraintTop_toBottomOf="@+id/cbDejepis" />
+
+            <CheckBox
+                android:id="@+id/cbFilozofie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_help_center_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="Fi"
+                android:text="@string/fi"
+                app:layout_constraintTop_toBottomOf="@+id/cbHistorickySeminar" />
+
+            <CheckBox
+                android:id="@+id/cbAntropologickySeminar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_help_center_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="As"
+                android:text="@string/as_"
+                app:layout_constraintTop_toBottomOf="@+id/cbFilozofie" />
+
+            <CheckBox
+                android:id="@+id/cbCeskyJazyk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_help_center_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="Čj"
+                android:text="@string/cj"
+                app:layout_constraintTop_toBottomOf="@+id/cbAntropologickySeminar" />
+
+            <CheckBox
+                android:id="@+id/cbCeskyJazykKomunikace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_help_center_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="Čjk"
+                android:text="@string/cjk"
+                app:layout_constraintTop_toBottomOf="@+id/cbCeskyJazyk" />
+
+            <CheckBox
+                android:id="@+id/cbCtenarskaGramotnost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_help_center_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="Cg"
+                android:text="@string/cg"
+                app:layout_constraintTop_toBottomOf="@+id/cbCeskyJazykKomunikace" />
+
+            <CheckBox
+                android:id="@+id/cbLiteraura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_help_center_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="Li"
+                android:text="@string/li"
+                app:layout_constraintTop_toBottomOf="@+id/cbCtenarskaGramotnost" />
+
+            <CheckBox
+                android:id="@+id/cbLiterarniSeminar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_help_center_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="Ls"
+                android:text="@string/ls"
+                app:layout_constraintTop_toBottomOf="@+id/cbLiteraura" />
+
+            <TextView
+                android:id="@+id/tvPrirodniVedy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Přírodní vědy"
+                app:layout_constraintStart_toStartOf="@+id/cbBiologie"
+                app:layout_constraintTop_toBottomOf="@+id/cbLiterarniSeminar" />
+
+            <CheckBox
+                android:id="@+id/cbBiologie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_help_center_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="Bi"
+                android:text="@string/bi"
+                app:layout_constraintTop_toBottomOf="@+id/tvPrirodniVedy" />
+
+            <CheckBox
+                android:id="@+id/cbBiologieRozsirena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_help_center_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="BiR"
+                android:text="@string/bir"
+                app:layout_constraintTop_toBottomOf="@+id/cbBiologie" />
+
+            <CheckBox
+                android:id="@+id/cbBiologieZakladni"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_help_center_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="BiZ"
+                android:text="@string/biz"
+                app:layout_constraintTop_toBottomOf="@+id/cbBiologieRozsirena" />
+
+            <CheckBox
+                android:id="@+id/cbEvolucniBiologie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_help_center_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="Eb"
+                android:text="@string/eb"
+                app:layout_constraintTop_toBottomOf="@+id/cbBiologieZakladni" />
+
+            <CheckBox
+                android:id="@+id/cbChemie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_science_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="Ch"
+                android:text="@string/ch"
+                app:layout_constraintTop_toBottomOf="@+id/cbEvolucniBiologie" />
+
+            <CheckBox
+                android:id="@+id/cbBiochemie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_help_center_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="Bc"
+                android:text="@string/bc"
+                app:layout_constraintTop_toBottomOf="@+id/cbChemie" />
+
+            <CheckBox
+                android:id="@+id/cbFyzika"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_help_center_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="Fy"
+                android:text="@string/fy"
+                app:layout_constraintTop_toBottomOf="@+id/cbBiochemie" />
+
+            <CheckBox
+                android:id="@+id/cbGeologie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_help_center_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="Ge"
+                android:text="@string/ge"
+                app:layout_constraintTop_toBottomOf="@+id/cbFyzika" />
+
+            <CheckBox
+                android:id="@+id/cbEkologie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_help_center_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="Eko"
+                android:text="@string/eko"
+                app:layout_constraintTop_toBottomOf="@+id/cbGeologie" />
+
+            <CheckBox
+                android:id="@+id/cbEtologie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_help_center_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="Eto"
+                android:text="@string/eto"
+                app:layout_constraintTop_toBottomOf="@+id/cbEkologie" />
+
+            <CheckBox
+                android:id="@+id/cbAplikovanaFyzika"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_help_center_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="Af"
+                android:text="@string/af"
+                app:layout_constraintTop_toBottomOf="@+id/cbEtologie" />
+
+            <CheckBox
+                android:id="@+id/cbMladiDebrujari"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_help_center_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="MD"
+                android:text="@string/md"
+                app:layout_constraintTop_toBottomOf="@+id/cbAplikovanaFyzika" />
+
+            <CheckBox
+                android:id="@+id/cbMaterialyMereni"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_biotech_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="Mm"
+                android:text="@string/mm"
+                app:layout_constraintTop_toBottomOf="@+id/cbMladiDebrujari" />
+
+            <CheckBox
+                android:id="@+id/cbLTBiologie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_biotech_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="LtB"
+                android:text="@string/ltb"
+                app:layout_constraintTop_toBottomOf="@+id/cbMaterialyMereni" />
+
+            <CheckBox
+                android:id="@+id/cbLTChemie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_biotech_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="LtC"
+                android:text="@string/ltc"
+                app:layout_constraintTop_toBottomOf="@+id/cbLTBiologie" />
+
+            <TextView
+                android:id="@+id/tvMatematickeVedy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Matematické vědy"
+                app:layout_constraintStart_toStartOf="@+id/cbMatematika"
+                app:layout_constraintTop_toBottomOf="@+id/cbLTChemie" />
+
+            <CheckBox
+                android:id="@+id/cbMatematika"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_calculate_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="M"
+                android:text="@string/m"
+                app:layout_constraintTop_toBottomOf="@+id/tvMatematickeVedy" />
+
+            <CheckBox
+                android:id="@+id/cbMatematikaRozsirena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_functions_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="Mr"
+                android:text="@string/mr"
+                app:layout_constraintTop_toBottomOf="@+id/cbMatematika" />
+
+            <CheckBox
+                android:id="@+id/cbDeskriptivniGeometrie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_architecture_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="Dg"
+                android:text="@string/dg"
+                app:layout_constraintTop_toBottomOf="@+id/cbMatematikaRozsirena" />
+
+            <TextView
+                android:id="@+id/tvCiziJazyky"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Cizí jazyky"
+                android:drawableStart="@drawable/ic_translate_20"
+                android:drawablePadding="8dp"
+                app:layout_constraintStart_toStartOf="@+id/cbAnglickyJazyk"
+                app:layout_constraintTop_toBottomOf="@+id/cbDeskriptivniGeometrie" />
+
+            <CheckBox
+                android:id="@+id/cbAnglickyJazyk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_translate_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="Aj"
+                android:text="@string/aj"
+                app:layout_constraintTop_toBottomOf="@+id/tvCiziJazyky" />
+
+            <CheckBox
+                android:id="@+id/cbAnglickyJazykLiteratura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_help_center_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="Al"
+                android:text="@string/al"
+                app:layout_constraintTop_toBottomOf="@+id/cbAnglickyJazyk" />
+
+            <CheckBox
+                android:id="@+id/cbAnglickyJazykRealie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_help_center_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="Ar"
+                android:text="@string/ar"
+                app:layout_constraintTop_toBottomOf="@+id/cbAnglickyJazykLiteratura" />
+
+            <CheckBox
+                android:id="@+id/cbAnglickaKonverzace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_help_center_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="Ak"
+                android:text="@string/ak"
+                app:layout_constraintTop_toBottomOf="@+id/cbAnglickyJazykRealie" />
+
+            <CheckBox
+                android:id="@+id/cbFCE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_help_center_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="FCE"
+                android:text="@string/fce"
+                app:layout_constraintTop_toBottomOf="@+id/cbAnglickaKonverzace" />
+
+            <CheckBox
+                android:id="@+id/cbNemeckyJazykNepovinny"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_translate_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="NjN"
+                android:text="@string/njn"
+                app:layout_constraintTop_toBottomOf="@+id/cbFCE" />
+
+            <CheckBox
+                android:id="@+id/cbNemeckaKonverzace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_help_center_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="Nk"
+                android:text="@string/nk"
+                app:layout_constraintTop_toBottomOf="@+id/cbNemeckyJazykNepovinny" />
+
+            <CheckBox
+                android:id="@+id/cbSpanelskyJazykNepovinny"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_translate_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="SjN"
+                android:text="@string/sjn"
+                app:layout_constraintTop_toBottomOf="@+id/cbNemeckaKonverzace" />
+
+            <CheckBox
+                android:id="@+id/cbSpanelskaKonverzace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_help_center_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="Sk"
+                android:text="@string/sk"
+                app:layout_constraintTop_toBottomOf="@+id/cbSpanelskyJazykNepovinny" />
+
+            <CheckBox
+                android:id="@+id/cbFrancouzskyJazykNepovinny"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_translate_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="NjN"
+                android:text="@string/fjn"
+                app:layout_constraintTop_toBottomOf="@+id/cbSpanelskaKonverzace" />
+
+            <CheckBox
+                android:id="@+id/cbLatina"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_translate_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="La"
+                android:text="@string/la"
+                app:layout_constraintTop_toBottomOf="@+id/cbFrancouzskyJazykNepovinny" />
+
+            <TextView
+                android:id="@+id/tvVychovy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Výchovy"
+                app:layout_constraintStart_toStartOf="@+id/cbDramatickaVychova"
+                app:layout_constraintTop_toBottomOf="@+id/cbLatina" />
+
+            <CheckBox
+                android:id="@+id/cbDramatickaVychova"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_help_center_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="Dv"
+                android:text="@string/dv"
+                app:layout_constraintTop_toBottomOf="@+id/tvVychovy" />
+
+            <CheckBox
+                android:id="@+id/cbHudebniVychova"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_help_center_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="Hv"
+                android:text="@string/hv"
+                app:layout_constraintTop_toBottomOf="@+id/cbDramatickaVychova" />
+
+            <CheckBox
+                android:id="@+id/cbObcanskaVychova"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_help_center_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="Ov"
+                android:text="@string/ov"
+                app:layout_constraintTop_toBottomOf="@+id/cbHudebniVychova" />
+
+            <CheckBox
+                android:id="@+id/cbTelesnaVychova"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_help_center_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="Tv"
+                android:text="@string/tv"
+                app:layout_constraintTop_toBottomOf="@+id/cbObcanskaVychova" />
+
+            <CheckBox
+                android:id="@+id/cbVytvarnaVychova"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_brush_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="Vv"
+                android:text="@string/vv"
+                app:layout_constraintTop_toBottomOf="@+id/cbTelesnaVychova" />
+
+            <CheckBox
+                android:id="@+id/cbVychovaKeZdravi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_help_center_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="Vz"
+                android:text="@string/vz"
+                app:layout_constraintTop_toBottomOf="@+id/cbVytvarnaVychova" />
+
+            <TextView
+                android:id="@+id/tvIT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="IT"
+                app:layout_constraintStart_toStartOf="@+id/cbInformatika"
+                app:layout_constraintTop_toBottomOf="@+id/cbVychovaKeZdravi" />
+
+
+            <CheckBox
+                android:id="@+id/cbInformatika"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_help_center_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="If"
+                android:text="@string/if_"
+                app:layout_constraintTop_toBottomOf="@+id/tvIT" />
+
+            <CheckBox
+                android:id="@+id/cbDigitalniTechnika"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_help_center_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="Dt"
+                android:text="@string/dt"
+                app:layout_constraintTop_toBottomOf="@+id/cbInformatika" />
+
+            <CheckBox
+                android:id="@+id/cbProgramovani"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_help_center_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="Pg"
+                android:text="@string/pg"
+                app:layout_constraintTop_toBottomOf="@+id/cbDigitalniTechnika" />
+
+            <TextView
+                android:id="@+id/tvZemepis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/ze"
+                app:layout_constraintStart_toStartOf="@+id/cbZemepis"
+                app:layout_constraintTop_toBottomOf="@+id/cbProgramovani" />
+
+            <CheckBox
+                android:id="@+id/cbZemepis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_public_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="Ze"
+                android:text="@string/ze"
+                app:layout_constraintTop_toBottomOf="@+id/tvZemepis" />
+
+            <TextView
+                android:id="@+id/tvSeminare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Semináře"
+                app:layout_constraintStart_toStartOf="@+id/cbAntropologickySeminar2"
+                app:layout_constraintTop_toBottomOf="@+id/cbZemepis" />
+
+
+            <CheckBox
+                android:id="@+id/cbAntropologickySeminar2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_help_center_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="As"
+                android:text="@string/as_"
+                app:layout_constraintTop_toBottomOf="@+id/tvSeminare" />
+
+            <CheckBox
+                android:id="@+id/cbSpolecenskovedniSeminar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_help_center_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="Svs"
+                android:text="@string/svs"
+                app:layout_constraintTop_toBottomOf="@+id/cbAntropologickySeminar2" />
+
+            <CheckBox
+                android:id="@+id/cbVytvarnySeminar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_brush_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="Vs"
+                android:text="@string/vs"
+                app:layout_constraintTop_toBottomOf="@+id/cbSpolecenskovedniSeminar" />
+
+
+            <TextView
+                android:id="@+id/tvKultura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Vědy o kultuře a umění"
+                app:layout_constraintStart_toStartOf="@+id/cbKek"
+                app:layout_constraintTop_toBottomOf="@+id/cbVytvarnySeminar" />
+
+            <CheckBox
+                android:id="@+id/cbKek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_help_center_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="Kek"
+                android:text="@string/kek"
+                app:layout_constraintTop_toBottomOf="@+id/tvKultura" />
+
+            <CheckBox
+                android:id="@+id/cbVytvarnaEstetika"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_brush_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="Ve"
+                android:text="@string/ve"
+                app:layout_constraintTop_toBottomOf="@+id/cbKek" />
+
+            <TextView
+                android:id="@+id/tvOstatni"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Ostatní"
+                app:layout_constraintStart_toStartOf="@+id/cbDebatniKlub"
+                app:layout_constraintTop_toBottomOf="@+id/cbVytvarnaEstetika" />
+
+
+            <CheckBox
+                android:id="@+id/cbDebatniKlub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_help_center_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="Dk"
+                android:text="@string/dk"
+                app:layout_constraintTop_toBottomOf="@+id/tvOstatni" />
+
+            <CheckBox
+                android:id="@+id/cbStopa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_help_center_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="DS"
+                android:text="@string/ds"
+                app:layout_constraintTop_toBottomOf="@+id/cbDebatniKlub" />
+
+            <CheckBox
+                android:id="@+id/cbSkolniPsycholog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_help_center_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="SP"
+                android:text="@string/sp"
+                app:layout_constraintTop_toBottomOf="@+id/cbStopa" />
+
+            <TextView
+                android:id="@+id/tvRozradit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="ostatni"
+                app:layout_constraintStart_toStartOf="@+id/cbEkonomie"
+                app:layout_constraintTop_toBottomOf="@+id/cbSkolniPsycholog" />
+
+
+            <CheckBox
+                android:id="@+id/cbEkonomie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_savings_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="Ek"
+                android:text="@string/ek"
+                app:layout_constraintTop_toBottomOf="@+id/tvRozradit" />
+
+            <CheckBox
+                android:id="@+id/cbEvropskeSouvislosti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_help_center_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="Evs"
+                android:text="@string/evs"
+                app:layout_constraintTop_toBottomOf="@+id/cbEkonomie" />
+
+            <CheckBox
+                android:id="@+id/cbPravoPolitologie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_help_center_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="Pp"
+                android:text="@string/pp"
+                app:layout_constraintTop_toBottomOf="@+id/cbEvropskeSouvislosti" />
+
+            <CheckBox
+                android:id="@+id/cbPraktickaEkonomie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_savings_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="PrE"
+                android:text="@string/pre"
+                app:layout_constraintTop_toBottomOf="@+id/cbPravoPolitologie" />
+
+            <CheckBox
+                android:id="@+id/cbPsychologie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_help_center_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="Ps"
+                android:text="@string/ps"
+                app:layout_constraintTop_toBottomOf="@+id/cbPraktickaEkonomie" />
+
+            <CheckBox
+                android:id="@+id/cbRetorika"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_help_center_24"
+                android:drawablePadding="8dp"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:tag="Re"
+                android:text="@string/re"
+                app:layout_constraintTop_toBottomOf="@+id/cbPsychologie" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

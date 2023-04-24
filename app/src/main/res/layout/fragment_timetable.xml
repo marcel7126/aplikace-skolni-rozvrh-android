@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeRefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clTimetableFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvTrida"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="null"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/tvDayMon"
+        app:layout_constraintEnd_toEndOf="@+id/tvDayMon"
+        app:layout_constraintStart_toStartOf="@+id/tvDayMon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <HorizontalScrollView
+        android:id="@+id/tableScroll"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvDayMon"
+        app:layout_constraintTop_toTopOf="@id/pbTableLoad">
+
+        <include
+            android:id="@+id/includeTable"
+            layout="@layout/layout_timetable"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/tvDayMon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="4dp"
+        android:width="48dp"
+        android:height="64dp"
+        android:background="@drawable/bg_day_title"
+        android:gravity="center"
+        android:text="@string/day_short_mon"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvDayTue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <TextView
+        android:id="@+id/tvDayTue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:height="64dp"
+        android:background="@drawable/bg_day_title"
+        android:gravity="center"
+        android:text="@string/day_short_tue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvDayWed"
+        app:layout_constraintEnd_toEndOf="@+id/tvDayMon"
+        app:layout_constraintStart_toStartOf="@+id/tvDayMon" />
+
+    <TextView
+        android:id="@+id/tvDayWed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:height="64dp"
+        android:background="@drawable/bg_day_title"
+        android:gravity="center"
+        android:text="@string/day_short_wed"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvDayThu"
+        app:layout_constraintEnd_toEndOf="@+id/tvDayMon"
+        app:layout_constraintStart_toStartOf="@+id/tvDayMon" />
+
+    <TextView
+        android:id="@+id/tvDayThu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:height="64dp"
+        android:background="@drawable/bg_day_title"
+        android:gravity="center"
+        android:text="@string/day_short_thu"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvDayFri"
+        app:layout_constraintEnd_toEndOf="@+id/tvDayMon"
+        app:layout_constraintStart_toStartOf="@+id/tvDayMon" />
+
+    <TextView
+        android:id="@+id/tvDayFri"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:height="64dp"
+        android:background="@drawable/bg_day_title"
+        android:gravity="center"
+        android:text="@string/day_short_fri"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tableScroll"
+        app:layout_constraintEnd_toEndOf="@+id/tvDayMon"
+        app:layout_constraintStart_toStartOf="@+id/tvDayMon" />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/pbTableLoad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="gone"
+        app:indeterminateAnimationType="disjoint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:showAnimationBehavior="outward"
+        app:trackThickness="4dp" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/groupDays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:constraint_referenced_ids="tvDayMon,tvDayThu,tvDayFri,tvDayWed,tvDayTue" />
+
+    <TextView
+        android:id="@+id/tvError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text=""
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableScroll" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+<!--</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>-->

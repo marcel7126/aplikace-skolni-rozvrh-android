@@ -1,0 +1,97 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- MAIN THEME LIGHT -->
+    <style name="marcelTheme" parent="Theme.MaterialComponents.DayNight">
+
+        <!--<item name="fontFamily">@font/noto_sans_display_variable</item>-->
+
+        <!-- PRIMARY -->
+        <item name="colorPrimary">@color/marcel_Primary</item>
+        <item name="colorPrimaryVariant">@color/unused</item>
+        <item name="colorOnPrimary">@color/marcel_Text_on_Primary</item>
+
+        <!-- SECONDARY -->
+        <item name="colorSecondary">@color/marcel_Primary</item>
+        <item name="colorSecondaryVariant">@color/unused</item>
+        <item name="colorOnSecondary">@color/unused</item>
+
+        <!-- STATUS BAR -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/marcel_Primary_Dark</item>
+
+        <!-- MATERIAL BUTTON SHIT OR THE APP WILL CRASH :( (it is fixed now) -->
+        <!-- <item name="colorSurface">#ff0000</item> -->
+
+        <!-- ACTION BAR -->
+        <item name="actionBarStyle">@style/marcelTheme.ActionBarStyle</item>
+        <item name="actionBarTheme">@style/marcelTheme.Actionbar</item>
+
+        <!-- OTHER -->
+        <!-- <item name="background">@android:color/transparent</item> -->
+        <!-- <item name="colorAccent">#000000</item> -->
+
+        <item name="android:windowBackground">@color/n_background</item>
+
+        <item name="android:navigationBarColor">@color/marcel_Primary_Dark</item>
+
+
+    </style>
+
+    <!-- ADJUSTING ACTION BAR TITLE TEXT COLOR -->
+    <style name="marcelTheme.Actionbar" parent="ThemeOverlay.MaterialComponents.ActionBar" >
+        <!-- TEXT COLOR (MaterialComponents Action Bar inherits color from primary text color) -->
+        <item name="android:textColorPrimary">@color/marcel_Text_on_Primary</item>
+    </style>
+
+    <!-- ADJUSTING ACTION BAR BACKGROUND COLOR -->
+    <style name="marcelTheme.ActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <!-- REFERENCING TITLE TEXT STYLE -->
+        <item name="titleTextStyle">@style/marcelTheme.ActionBar.TitleTextStyle</item>
+        <!-- BACKGROUND COLOR -->
+        <item name="background">@color/marcel_Primary</item>
+    </style>
+
+    <!-- ADJUSTING ACTION BAR TITLE TEXT SIZE -->
+    <style name="marcelTheme.ActionBar.TitleTextStyle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <!-- TEXT SIZE (16sp is the same as default) -->
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- TILE BACKGROUND -->
+    <drawable name="tileBackgroundDrawable">@drawable/_tile_light01</drawable>
+    <drawable name="tileBackgroundDrawableUnoccupied">@drawable/_tile_light02</drawable>
+    <drawable name="tileBackgroundDrawableSuplovano">@drawable/_tile_light03suplovano</drawable>
+
+    <!-- LINE -->
+    <drawable name="theme_line">@drawable/line</drawable>
+    <color name="theme_tile_color">#EAEAEA</color>
+
+    <!-- REFRESH SWIPE DOWN BACKGROUND COLOR -->
+    <color name="refreshBackground">@color/white</color>
+    <color name="colorPrimary">@color/marcel_Primary</color>
+
+    <!-- SPLASH SCREEN THEME LIGHT -->
+    <style name="splashScreenTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/splash_bg</item>
+        <item name="android:windowBackground">@drawable/splash</item>
+        <item name="android:navigationBarColor">@color/splash_bg</item>
+    </style>
+
+    <!-- TAB LAYOUT STYLE -->
+    <style name="marcelTabLayout" parent="Widget.MaterialComponents.TabLayout">
+        <item name="tabBackground">@drawable/tab_background</item>
+    </style>
+
+
+    <style name="marcelCheckbox" parent="@style/Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:colorControlNormal">#ff0000</item>
+        <item name="android:colorControlActivated">#00ff00</item>
+        <item name="android:colorControlHighlight">#0000ff</item>
+    </style>
+
+    <!-- SNACK BAR RELATED -->
+    <color name="snack_bar_background">@color/grayscale_90</color>
+    <color name="snack_bar_text">@color/grayscale_10</color>
+    <color name="snack_bar_action_text">@color/marcel_Primary</color>
+
+
+</resources>

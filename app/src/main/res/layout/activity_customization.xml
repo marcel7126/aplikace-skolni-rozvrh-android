@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tvAtutoSave">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/rgJazyk">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:textStyle="bold"
+                android:text="@string/visibility_prefs"
+                android:textSize="32sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/n_beta"
+                android:orientation="vertical">
+
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_width="match_parent"
+                    app:dividerColor="@color/divider_color"
+                    android:layout_height="1dp" />
+                <com.marcel7126.rozvrhdpg.CheckableButton
+                    android:background="@drawable/bg_just_ripple"
+                    android:textAllCaps="false"
+                    android:id="@+id/btnShowDays"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:drawableEnd="@drawable/marcel_toggle_selector"
+                    android:drawableTint="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checkable="true"
+                    android:checked="false"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="start|center_vertical"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:tag="ShowDays"
+                    android:text="@string/switch_hide_days"
+                    app:cornerRadius="0dp"
+                    app:iconPadding="8dp" />
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_marginStart="16dp"
+                    app:dividerColor="@color/divider_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+                <com.marcel7126.rozvrhdpg.CheckableButton
+                    android:background="@drawable/bg_just_ripple"
+                    android:textAllCaps="false"
+                    android:id="@+id/btnHideClassrooms"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:drawableEnd="@drawable/marcel_toggle_selector"
+                    android:drawableTint="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checkable="true"
+                    android:checked="false"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="start|center_vertical"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:tag="HideClassrooms"
+                    android:text="@string/switch_hide_classrooms"
+                    app:cornerRadius="0dp"
+                    app:iconPadding="8dp" />
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_marginStart="16dp"
+                    app:dividerColor="@color/divider_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+                <com.marcel7126.rozvrhdpg.CheckableButton
+                    android:background="@drawable/bg_just_ripple"
+                    android:textAllCaps="false"
+                    android:id="@+id/btnAlwaysShowClassrooms"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:drawableEnd="@drawable/marcel_toggle_selector"
+                    android:drawableTint="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checkable="true"
+                    android:checked="false"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="start|center_vertical"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:tag="AlwaysShowClassrooms"
+                    android:text="@string/switch_always_show_classrooms"
+                    app:cornerRadius="0dp"
+                    app:iconPadding="8dp" />
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_marginStart="16dp"
+                    app:dividerColor="@color/divider_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+                <com.marcel7126.rozvrhdpg.CheckableButton
+                    android:background="@drawable/bg_just_ripple"
+                    android:textAllCaps="false"
+                    android:id="@+id/btnHideDash"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:drawableEnd="@drawable/marcel_toggle_selector"
+                    android:drawableTint="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checkable="true"
+                    android:checked="false"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="start|center_vertical"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:tag="HideDash"
+                    android:text="@string/switch_hide_dash"
+                    app:cornerRadius="0dp"
+                    app:iconPadding="8dp" />
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_marginStart="16dp"
+                    app:dividerColor="@color/divider_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+                <com.marcel7126.rozvrhdpg.CheckableButton
+                    android:background="@drawable/bg_just_ripple"
+                    android:textAllCaps="false"
+                    android:id="@+id/btnHideTime"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:drawableEnd="@drawable/marcel_toggle_selector"
+                    android:drawableTint="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checkable="true"
+                    android:checked="false"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="start|center_vertical"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:tag="HideTime"
+                    android:text="@string/switch_hide_time"
+                    app:cornerRadius="0dp"
+                    app:iconPadding="8dp" />
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_marginStart="16dp"
+                    app:dividerColor="@color/divider_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+                <com.marcel7126.rozvrhdpg.CheckableButton
+                    android:background="@drawable/bg_just_ripple"
+                    android:textAllCaps="false"
+                    android:id="@+id/btnShowClassNumber"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:drawableEnd="@drawable/marcel_toggle_selector"
+                    android:drawableTint="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checkable="true"
+                    android:checked="false"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="start|center_vertical"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:tag="ShowClassNumber"
+                    android:text="@string/switch_show_class_number"
+                    app:cornerRadius="0dp"
+                    app:iconPadding="8dp" />
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_width="match_parent"
+                    app:dividerColor="@color/divider_color"
+                    android:layout_height="1dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tvAtutoSave"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/marcel_Primary"
+        android:gravity="center"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="@string/auto_save"
+        android:textColor="@color/white_smoke"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:cornerRadius="0dp"
+        app:iconPadding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

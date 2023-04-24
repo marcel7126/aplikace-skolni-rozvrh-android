@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/mon"
+        android:title="@string/day_short_mon" />
+    <item android:id="@+id/tue"
+        android:title="@string/day_short_tue" />
+    <item android:id="@+id/wed"
+        android:title="@string/day_short_wed" />
+    <item android:id="@+id/thu"
+        android:title="@string/day_short_thu" />
+    <item android:id="@+id/fri"
+        android:title="@string/day_short_fri" />
+</menu>

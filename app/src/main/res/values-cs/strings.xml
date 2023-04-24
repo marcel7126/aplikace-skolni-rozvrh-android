@@ -1,0 +1,201 @@
+<resources>
+    <string name="app_name">Rozvrh DPG</string>
+    <string-array name="tridy">
+        <item>Prima</item>
+        <item>Sekunda</item>
+        <item>Tercie</item>
+        <item>Kvarta</item>
+        <item>Kvinta</item>
+        <item>Sexta</item>
+        <item>Septima</item>
+        <item>Oktáva</item>
+        <item>I. Ročník</item>
+        <item>II. Ročník</item>
+        <item>III. Ročník</item>
+        <item>IV. Ročník</item>
+    </string-array>
+
+
+    <string name="settings_activity">Rozvrh DPG - Nastavení</string>
+
+
+    <string name="description">Školní rozvrh a suplování pro Doctrina - Podještědské gymnázium v Liberci</string>
+
+    <string name="day_short_mon">Po</string>
+    <string name="day_short_tue">Út</string>
+    <string name="day_short_wed">St</string>
+    <string name="day_short_thu">Čt</string>
+    <string name="day_short_fri">Pá</string>
+
+    <string name="button_preferences">Nastavení</string>
+    <string name="preferences">Nastavení</string>
+    <string name="other">Ostatní</string>
+    <string name="search">Vyhledávání</string>
+    <string name="timetable">Rozvrh</string>
+
+    <string name="subjects">Předměty</string>
+    <string name="year">Ročník</string>
+    <string name="trida">Třída</string>
+
+    <string name="switch_hide_days">Skrýt popisky dnů</string>
+    <string name="switch_hide_classrooms">Skrýt učebny</string>
+    <string name="switch_always_show_classrooms">Vždy zobrazovat učebny</string>
+    <string name="switch_flip_table_orientation">Zobrazit rozvrh vertikálně</string>
+    <string name="switch_hide_dash">Skrýt oddělovací pomlčku</string>
+    <string name="switch_hide_time">Skrýt časy hodin</string>
+    <string name="switch_show_class_number">Zobrazit čísla hodin</string>
+    <string name="switch_show_classes_separated">Nezobrazovat po sobě jdoucí hodiny spojené</string>
+
+    <string name="general">Obecné</string>
+
+    <string name="retry">Zkusit znova</string>
+
+    <string name="cancel">Zrušit</string>
+    <string name="save">Uložit</string>
+
+    <string name="add_to_calendar">Kalendář</string>
+
+    <string name="choose_subjects">Volba předmětů</string>
+
+    <string name="group_a">Skupina A</string>
+    <string name="group_b">Skupina B</string>
+    <string name="pe_boys">Chlapci</string>
+    <string name="pe_girls">Dívky</string>
+    <string name="nj">Německý jazyk</string>
+    <string name="sj">Španělský jazyk</string>
+    <string name="fj">Francouzský jazyk</string>
+    <string name="d">Dějepis</string>
+    <string name="fi">Filozofie</string>
+    <string name="bi">Biologie</string>
+    <string name="biz">Biologie základní</string>
+    <string name="bir">Biologie rozšířená</string>
+    <string name="ch">Chemie</string>
+    <string name="bc">Biochemie</string>
+    <string name="fy">Fyzika</string>
+    <string name="ge">Geologie</string>
+    <string name="eko">Ekologie</string>
+    <string name="eto">Etologie</string>
+    <string name="af">Aplikovaná fyzyka</string>
+    <string name="md">Mladí debrujáři</string>
+    <string name="mm">Materiály a měření</string>
+    <string name="m">Matematika</string>
+    <string name="mr">Matematika rozšířená</string>
+    <string name="dg">Deskriptivní geometrie</string>
+    <string name="aj">Anglický jazyk</string>
+    <string name="ak">Anglická konverzace</string>
+    <string name="al">Anglický jazyk - literatura</string>
+    <string name="ar">Anglický jazyk - reálie</string>
+    <string name="fjn">Francouzský jazyk nepovinný</string>
+    <string name="sjn">Španělský jazyk nepovinný</string>
+    <string name="njn">Německý jazyk nepovinný</string>
+    <string name="fce">Pokročilá angličtina (FCE)</string>
+    <string name="la">Latina</string>
+    <string name="nk">Německá konverzace</string>
+    <string name="sk">Španělská konverzace</string>
+    <string name="fk">Francouzský konverzace</string>
+    <string name="sp">Hodina se školní psycholožkou</string>
+    <string name="as_">Antropologický seminář</string>
+    <string name="cg">Čtenářská gramotnost</string>
+    <string name="cjk">Český jazyk a komunikace</string>
+    <string name="cj">Český jazyk</string>
+    <string name="dk">Debatní klub</string>
+    <string name="ds">Divadelní soubor STOPA</string>
+    <string name="dt">Digitální technika</string>
+    <string name="dv">Dramatická výchova</string>
+    <string name="eb">Evoluční biologie</string>
+    <string name="ek">Ekonomie</string>
+    <string name="evs">Evropské souvislosti</string>
+    <string name="hs">Historický seminář</string>
+    <string name="hv">Hudební výchova</string>
+    <string name="if_">Informatika</string>
+    <string name="kek">Kořeny evropské kultury</string>
+    <string name="ltb">Laboratorní technika - biologie</string>
+    <string name="ltc">Laboratorní technika - chemie</string>
+    <string name="li">Literatura</string>
+    <string name="ls">Literární seminář</string>
+    <string name="ov">Občanská výchova</string>
+    <string name="pg">Programování</string>
+    <string name="pp">Právo a politologie</string>
+    <string name="pre">Praktická ekonomie</string>
+    <string name="ps">Psychologie</string>
+    <string name="re">Rétorika</string>
+    <string name="svs">Společenskovědní seminář</string>
+    <string name="tv">Tělesná výchova</string>
+    <string name="ve">Výtvarná estetika</string>
+    <string name="vs">Výtvarný seminář</string>
+    <string name="vv">Výtvarná výchova</string>
+    <string name="vz">Výchova ke zdraví</string>
+    <string name="ze">Zeměpis</string>
+    <string name="th">Třídnická hodina</string>
+    <string name="tvd">Tělesná výchova - Dívky</string>
+    <string name="tvc">Tělesná výchova - Chlapci</string>
+
+    <string name="girls">Dívky</string>
+    <string name="boys">Chlapci</string>
+
+    <string name="sw">Swallow School</string>
+
+    <string name="tt">Trimestrální test</string>
+    <string name="ott">Oprava Trimestrálního testu</string>
+    <string name="odp">Hodina odpadá</string>
+    <string name="presun">Hodina přesunuta</string>
+    <string name="misto">Místo # hodiny</string>
+    <string name="spoj">Hodina spojena</string>
+    <string name="stars1">Trimestrální test</string>
+    <string name="stars2">Trimestrální test</string>
+    <string name="stars3">Trimestrální test</string>
+    <string name="stars4">Trimestrální test</string>
+    <string name="stars5">Trimestrální test</string>
+
+    <string name="search_year_or_teacher">Třída nebo vyučující</string>
+
+    <string name="lunch_break">volná hodina</string>
+    <string name="lunch">oběd</string>
+
+    <string name="floor">%1$s patro</string>
+    <string name="ground_floor">Přízemí</string>
+    <string name="first">1.</string>
+    <string name="second">2.</string>
+    <string name="doesnt_exist">Už neexistuje</string>
+
+    <string name="group_ab">Skupina</string>
+    <string name="group_pe">Tělocvik</string>
+    <string name="language">Třetí jazyk</string>
+    <string name="humanitni">Humanitní předměty</string>
+    <string name="prirodni">Přírodní vědy</string>
+    <string name="matematicke">Matematické vědy</string>
+    <string name="cizi_jazyk">Cizí jazyky</string>
+    <string name="vychovy">Výchovy</string>
+    <string name="it">IT</string>
+    <string name="zemepis">Zeměpis</string>
+    <string name="seminare">Semináře</string>
+    <string name="kultura_umeni">Vědy o kultuře a umění</string>
+
+    <string name="no_internet_connection">Bez připojení k internetu.</string>
+
+    <string name="auto_save">Automaticky ukládáno</string>
+
+    <string name="sb_first_launch">Nemáte zvolené předměty ani třídu.</string>
+    <string name="sb_settings">Nastavení</string>
+
+    <!-- PREFERENCES -->
+    <string name="subject_selection">Výběr předmětů</string>
+    <string name="visibility_prefs">Přizpůsobení rozvrhu</string>
+
+    <string name="student">Student</string>
+    <string name="teacher">Vyučující</string>
+
+    <string name="locale">Jazyk</string>
+
+    <string name="view_changelog_note">You can view changelog if interested.</string>
+    <string name="feedback_note">If you are having any problems with the app, fill feedback form and describe your problems. However sharing your experiences through feedback is welcomed.</string>
+    <string name="restart_required">Restart required</string>
+    <string name="view_changelog">View Changelog…</string>
+    <string name="send_feedback">Send Feedback…</string>
+
+    <!-- LOCALES -->
+    <string name="locale_en">Angličtina</string>
+    <string name="locale_cs">Čeština</string>
+    <string name="locale_device">Výchozí jazyk zařízení</string>
+
+</resources>

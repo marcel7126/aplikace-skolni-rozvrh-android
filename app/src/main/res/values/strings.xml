@@ -1,0 +1,219 @@
+<resources>
+    <string name="app_name">Rozvrh DPG</string>
+
+    <string-array name="tridy">
+        <item>Prima</item>
+        <item>Sekunda</item>
+        <item>Tercie</item>
+        <item>Kvarta</item>
+        <item>Kvinta</item>
+        <item>Sexta</item>
+        <item>Septima</item>
+        <item>Oktáva</item>
+        <item>I. Ročník</item>
+        <item>II. Ročník</item>
+        <item>III. Ročník</item>
+        <item>IV. Ročník</item>
+    </string-array>
+
+    <!-- THE CZECH EQUIVALENT IS USED FOR SAVING PREFERENCES, TRANSLATION COMMENTED UNTIL FIXED
+    <string-array name="tridy">
+        <item>Prīmus</item>
+        <item>Secundus</item>
+        <item>Tertius</item>
+        <item>Quārtus</item>
+        <item>Quīntus</item>
+        <item>Sextus</item>
+        <item>Septimus</item>
+        <item>Octāvus</item>
+        <item>I. Year</item>
+        <item>II. Year</item>
+        <item>III. Year</item>
+        <item>IV. Year</item>
+    </string-array>
+    -->
+
+
+    <string name="settings_activity">Rozvrh DPG - Preferences</string>
+
+
+    <string name="description">Schools Timetable with changes for Doctrina - Podještědské gymnáium in Liberec</string>
+
+    <string name="day_short_mon">Mon</string>
+    <string name="day_short_tue">Tue</string>
+    <string name="day_short_wed">Wed</string>
+    <string name="day_short_thu">Thu</string>
+    <string name="day_short_fri">Fri</string>
+
+    <string name="button_preferences">Preferences</string>
+    <string name="preferences">Preferences</string>
+    <string name="other">Other</string>
+    <string name="search">Search</string>
+    <string name="timetable">Timetable</string>
+
+    <string name="subjects">Subjects</string>
+    <string name="year">Year</string>
+    <string name="trida">Class</string>
+
+    <string name="switch_hide_days">Hide day labels</string>
+    <string name="switch_hide_classrooms">Hide classrooms</string>
+    <string name="switch_always_show_classrooms">Always show classrooms</string>
+    <string name="switch_flip_table_orientation">Show vertical timetable</string>
+    <string name="switch_hide_dash">Hide divider dash</string>
+    <string name="switch_hide_time">Hide class time</string>
+    <string name="switch_show_class_number">Show class numbers</string>
+    <string name="switch_show_classes_separated">Don\'t show consecutive classes connected</string>
+
+    <string name="general">General</string>
+
+    <string name="retry">Retry</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+
+    <string name="add_to_calendar">Add to Calendar</string>
+
+    <string name="choose_subjects">Choose subjects</string>
+
+    <string name="group_a">Group A</string>
+    <string name="group_b">Group B</string>
+    <string name="pe_boys">Boys</string>
+    <string name="pe_girls">Girls</string>
+    <string name="nj">German language</string>
+    <string name="sj">Spanish language</string>
+    <string name="fj">French language</string>
+    <string name="d">History</string>
+    <string name="fi">Philosophy</string>
+    <string name="bi">Biology</string>
+    <string name="biz">Biology Basic</string>
+    <string name="bir">Biology Advanced</string>
+    <string name="ch">Chemistry</string>
+    <string name="bc">Biochemistry</string>
+    <string name="fy">Physics</string>
+    <string name="ge">Geology</string>
+    <string name="eko">Ecology</string>
+    <string name="eto">Ethology</string>
+    <string name="af">Practical?/aplicated? physics</string>
+    <string name="md">Young debrujars?</string>
+    <string name="mm">Materials and measurements?</string>
+    <string name="m">Mathematics</string>
+    <string name="mr">Mathematics Advanced</string>
+    <string name="dg">Descriptive geometry</string>
+    <string name="aj">English language</string>
+    <string name="ak">English conversations</string>
+    <string name="al">English language - literature</string>
+    <string name="ar">English language - realia</string>
+    <string name="fjn">French language optional</string>
+    <string name="sjn">Spanish language optional</string>
+    <string name="njn">German language optional</string>
+    <string name="fce">Advanced English (FCE)</string>
+    <string name="la">Latin</string>
+    <string name="nk">German conversation</string>
+    <string name="sk">Spanish conversation</string>
+    <string name="fk">French conversation</string>
+    <string name="sp">Lesson with a school psychologist</string>
+    <string name="as_">Anthropological Seminar</string>
+    <string name="cg">Literacy</string>
+    <string name="cjk">Czech language and communication</string>
+    <string name="cj">Czech language</string>
+    <string name="dk">Debate Club</string>
+    <string name="ds">Theatre ensemble STOPA</string>
+    <string name="dt">Digital technology</string>
+    <string name="dv">Dramatic education</string>
+    <string name="eb">Evolutionary biology</string>
+    <string name="ek">Economics</string>
+    <string name="evs">European context?</string>
+    <string name="hs">Historical seminar</string>
+    <string name="hv">Music education</string>
+    <string name="if_">Informatics / Computer Science</string>
+    <string name="kek">The roots of European culture</string>
+    <string name="ltb">Laboratory technology - Biology</string>
+    <string name="ltc">Laboratory technology - Chemistry</string>
+    <string name="li">Literature</string>
+    <string name="ls">Literary seminar</string>
+    <string name="ov">Civic Education</string>
+    <string name="pg">Programming</string>
+    <string name="pp">Law and Political Science</string>
+    <string name="pre">Practical economics</string>
+    <string name="ps">Psychology</string>
+    <string name="re">Rhetoric</string>
+    <string name="svs">Social Science Seminar</string>
+    <string name="tv">Physical education</string>
+    <string name="ve">Art aesthetics</string>
+    <string name="vs">Art seminar</string>
+    <string name="vv">Art education</string>
+    <string name="vz">health education</string>
+    <string name="ze">Geography</string>
+    <string name="th">Classroom lesson</string>
+    <string name="tvd">Physical education - Girls</string>
+    <string name="tvc">Physical education - Boys</string>
+
+    <string name="girls">Girls</string>
+    <string name="boys">Boys</string>
+
+    <string name="sw">Swallow School</string>
+
+    <string name="tt">Trimestrální test</string>
+    <string name="ott">Oprava Trimestrálního testu</string>
+    <string name="odp">Hodina odpadá</string>
+    <string name="presun">Hodina přesunuta</string>
+    <string name="misto">Místo # hodiny</string>
+    <string name="spoj">Hodina spojena</string>
+    <string name="stars1">Trimestrální test</string>
+    <string name="stars2">Trimestrální test</string>
+    <string name="stars3">Trimestrální test</string>
+    <string name="stars4">Trimestrální test</string>
+    <string name="stars5">Trimestrální test</string>
+
+    <string name="search_year_or_teacher">Year or teacher</string>
+
+    <string name="lunch_break">Lunch break</string>
+    <string name="lunch">Lunch</string>
+
+    <string name="floor">%1$s Floor</string>
+    <string name="ground_floor">Ground Floor</string>
+    <string name="first">1st</string>
+    <string name="second">2nd</string>
+    <string name="doesnt_exist">Does not exist</string>
+
+    <string name="group_ab">Group</string>
+    <string name="group_pe">Pe</string>
+    <string name="language">Third Language</string>
+    <string name="humanitni">Humanities Subjects</string>
+    <string name="prirodni">Natural Sciences</string>
+    <string name="matematicke">Mathematical Sciences</string>
+    <string name="cizi_jazyk">Foreign Languages</string>
+    <string name="vychovy">Educations</string>
+    <string name="it">IT</string>
+    <string name="zemepis">Geography</string>
+    <string name="seminare">Seminars</string>
+    <string name="kultura_umeni">Culture and Arts</string>
+
+    <string name="no_internet_connection">No internet connection.</string>
+
+    <string name="auto_save">Automatically saved</string>
+
+    <string name="sb_first_launch">You don\'t have class or subjects chosen.</string>
+    <string name="sb_settings">Preferences</string>
+
+    <!-- PREFERENCES -->
+    <string name="subject_selection">Subject Selection</string>
+    <string name="visibility_prefs">Timetable Customization</string>
+
+    <string name="student">Student</string>
+    <string name="teacher">Teacher</string>
+
+    <string name="locale">Locale</string>
+    
+    <string name="view_changelog_note">You can view changelog if interested.</string>
+    <string name="feedback_note">If you are having any problems with the app, fill feedback form and describe your problems. However sharing your experiences through feedback is welcomed.</string>
+    <string name="restart_required">Restart required</string>
+    <string name="view_changelog">View Changelog…</string>
+    <string name="send_feedback">Send Feedback…</string>
+
+    <!-- LOCALES -->
+    <string name="locale_en">English</string>
+    <string name="locale_cs">Czech</string>
+    <string name="locale_device">Device default</string>
+
+</resources>

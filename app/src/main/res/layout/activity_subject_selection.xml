@@ -1,0 +1,2214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+<ScrollView
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toTopOf="@+id/tvAtutoSave">
+
+<LinearLayout
+    android:id="@+id/llSettings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="0dp">
+
+
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:textStyle="bold"
+        android:text="@string/subject_selection"
+        android:textSize="32sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
+        android:textSize="12sp"
+        android:textAllCaps="true"
+        android:text="@string/group_ab" />
+    <LinearLayout
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/settings_button_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.marcel7126.rozvrhdpg.CheckableButton
+            android:textAllCaps="false"
+            android:id="@+id/btnSkupinaA"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/transparent"
+            android:foreground="@drawable/bg_just_ripple"
+            android:checkable="true"
+            android:checked="false"
+            android:clickable="true"
+            android:drawableEnd="@drawable/marcel_toggle_selector"
+            android:drawableTint="@color/colorPrimary"
+            android:focusable="true"
+            android:gravity="start|center_vertical"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:tag="A"
+            android:text="@string/group_a"
+            app:cornerRadius="0dp"
+            app:iconPadding="8dp" />
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <com.marcel7126.rozvrhdpg.CheckableButton
+            android:textAllCaps="false"
+            android:id="@+id/btnSkupinaB"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/transparent"
+            android:foreground="@drawable/bg_just_ripple"
+            android:checkable="true"
+            android:checked="false"
+            android:clickable="true"
+            android:drawableEnd="@drawable/marcel_toggle_selector"
+            android:drawableTint="@color/colorPrimary"
+            android:focusable="true"
+            android:gravity="start|center_vertical"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:tag="B"
+            android:text="@string/group_b"
+            app:cornerRadius="0dp"
+            app:iconPadding="8dp" />
+
+
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
+        android:textSize="12sp"
+        android:textAllCaps="true"
+        android:text="@string/tv" />
+    <LinearLayout
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/settings_button_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.marcel7126.rozvrhdpg.CheckableButton
+            android:textAllCaps="false"
+            android:id="@+id/btnTvChlapci"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/transparent"
+            android:background="@drawable/bg_just_ripple"
+            android:checkable="true"
+            android:checked="false"
+            android:clickable="true"
+            android:drawableEnd="@drawable/marcel_toggle_selector"
+            android:drawableTint="@color/colorPrimary"
+            android:focusable="true"
+            android:gravity="start|center_vertical"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:tag="Tvc"
+            android:text="@string/boys"
+            app:cornerRadius="0dp"
+            app:iconPadding="8dp" />
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <com.marcel7126.rozvrhdpg.CheckableButton
+            android:textAllCaps="false"
+            android:id="@+id/btnTvDivky"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/transparent"
+            android:background="@drawable/bg_just_ripple"
+            android:checkable="true"
+            android:checked="false"
+            android:clickable="true"
+            android:drawableEnd="@drawable/marcel_toggle_selector"
+            android:drawableTint="@color/colorPrimary"
+            android:focusable="true"
+            android:gravity="start|center_vertical"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:tag="Tvd"
+            android:text="@string/girls"
+            app:cornerRadius="0dp"
+            app:iconPadding="8dp" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
+        android:textSize="12sp"
+        android:textAllCaps="true"
+        android:text="@string/language" />
+    <LinearLayout
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/settings_button_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.marcel7126.rozvrhdpg.CheckableButton
+            android:textAllCaps="false"
+            android:id="@+id/btnNemcina"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/transparent"
+            android:background="@drawable/bg_just_ripple"
+            android:checkable="true"
+            android:checked="false"
+            android:clickable="true"
+            android:drawableEnd="@drawable/marcel_toggle_selector"
+            android:drawableTint="@color/colorPrimary"
+            android:focusable="true"
+            android:gravity="start|center_vertical"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:tag="Nj"
+            android:text="@string/nj"
+            app:cornerRadius="0dp"
+            app:iconPadding="8dp" />
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <com.marcel7126.rozvrhdpg.CheckableButton
+            android:textAllCaps="false"
+            android:id="@+id/btnSpanelstina"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/transparent"
+            android:background="@drawable/bg_just_ripple"
+            android:checkable="true"
+            android:checked="false"
+            android:clickable="true"
+            android:drawableEnd="@drawable/marcel_toggle_selector"
+            android:drawableTint="@color/colorPrimary"
+            android:focusable="true"
+            android:gravity="start|center_vertical"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:tag="Šj"
+            android:text="@string/sj"
+            app:cornerRadius="0dp"
+            app:iconPadding="8dp" />
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <com.marcel7126.rozvrhdpg.CheckableButton
+            android:textAllCaps="false"
+            android:id="@+id/btnFrancouzstina"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/transparent"
+            android:background="@drawable/bg_just_ripple"
+            android:checkable="true"
+            android:checked="false"
+            android:clickable="true"
+            android:drawableEnd="@drawable/marcel_toggle_selector"
+            android:drawableTint="@color/colorPrimary"
+            android:focusable="true"
+            android:gravity="start|center_vertical"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:tag="Fj"
+            android:text="@string/fj"
+            app:cornerRadius="0dp"
+            app:iconPadding="8dp" />
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
+        android:textSize="12sp"
+        android:textAllCaps="true"
+        android:text="anglictina" />
+    <LinearLayout
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/settings_button_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.marcel7126.rozvrhdpg.CheckableButton
+            android:textAllCaps="false"
+            android:id="@+id/btnAnglickyJazyk"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/transparent"
+            android:background="@drawable/bg_just_ripple"
+            android:checkable="true"
+            android:clickable="true"
+            android:drawableEnd="@drawable/marcel_toggle_selector"
+            android:drawableTint="@color/colorPrimary"
+            android:focusable="true"
+            android:gravity="start|center_vertical"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:tag="Aj"
+            android:text="@string/aj"
+            app:cornerRadius="0dp"
+            app:iconPadding="8dp" />
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <com.marcel7126.rozvrhdpg.CheckableButton
+            android:textAllCaps="false"
+            android:id="@+id/btnAnglickyJazykLiteratura"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/transparent"
+            android:background="@drawable/bg_just_ripple"
+            android:checkable="true"
+            android:clickable="true"
+            android:drawableEnd="@drawable/marcel_toggle_selector"
+            android:drawableTint="@color/colorPrimary"
+            android:focusable="true"
+            android:gravity="start|center_vertical"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:tag="Al"
+            android:text="@string/al"
+            app:cornerRadius="0dp"
+            app:iconPadding="8dp" />
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <com.marcel7126.rozvrhdpg.CheckableButton
+            android:textAllCaps="false"
+            android:id="@+id/btnAnglickyJazykRealie"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/transparent"
+            android:background="@drawable/bg_just_ripple"
+            android:checkable="true"
+            android:clickable="true"
+            android:drawableEnd="@drawable/marcel_toggle_selector"
+            android:drawableTint="@color/colorPrimary"
+            android:focusable="true"
+            android:gravity="start|center_vertical"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:tag="Ar"
+            android:text="@string/ar"
+            app:cornerRadius="0dp"
+            app:iconPadding="8dp" />
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <com.marcel7126.rozvrhdpg.CheckableButton
+            android:textAllCaps="false"
+            android:id="@+id/btnAnglickaKonverzace"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/transparent"
+            android:background="@drawable/bg_just_ripple"
+            android:checkable="true"
+            android:clickable="true"
+            android:drawableEnd="@drawable/marcel_toggle_selector"
+            android:drawableTint="@color/colorPrimary"
+            android:focusable="true"
+            android:gravity="start|center_vertical"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:tag="Ak"
+            android:text="@string/ak"
+            app:cornerRadius="0dp"
+            app:iconPadding="8dp" />
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <com.marcel7126.rozvrhdpg.CheckableButton
+            android:textAllCaps="false"
+            android:id="@+id/btnFCE"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/transparent"
+            android:background="@drawable/bg_just_ripple"
+            android:checkable="true"
+            android:clickable="true"
+            android:drawableEnd="@drawable/marcel_toggle_selector"
+            android:drawableTint="@color/colorPrimary"
+            android:focusable="true"
+            android:gravity="start|center_vertical"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:tag="FCE"
+            android:text="@string/fce"
+            app:cornerRadius="0dp"
+            app:iconPadding="8dp" />
+
+    </LinearLayout>
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
+        android:textSize="12sp"
+        android:textAllCaps="true"
+        android:text="ostatni jazyky" />
+    <LinearLayout
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/settings_button_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.marcel7126.rozvrhdpg.CheckableButton
+            android:textAllCaps="false"
+            android:id="@+id/btnNemeckyJazykNepovinny"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/transparent"
+            android:background="@drawable/bg_just_ripple"
+            android:checkable="true"
+            android:clickable="true"
+            android:drawableEnd="@drawable/marcel_toggle_selector"
+            android:drawableTint="@color/colorPrimary"
+            android:focusable="true"
+            android:gravity="start|center_vertical"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:tag="NjN"
+            android:text="@string/njn"
+            app:cornerRadius="0dp"
+            app:iconPadding="8dp" />
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <com.marcel7126.rozvrhdpg.CheckableButton
+            android:textAllCaps="false"
+            android:id="@+id/btnNemeckaKonverzace"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/transparent"
+            android:background="@drawable/bg_just_ripple"
+            android:checkable="true"
+            android:clickable="true"
+            android:drawableEnd="@drawable/marcel_toggle_selector"
+            android:drawableTint="@color/colorPrimary"
+            android:focusable="true"
+            android:gravity="start|center_vertical"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:tag="Nk"
+            android:text="@string/nk"
+            app:cornerRadius="0dp"
+            app:iconPadding="8dp" />
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <com.marcel7126.rozvrhdpg.CheckableButton
+            android:textAllCaps="false"
+            android:id="@+id/btnSpanelskyJazykNepovinny"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/transparent"
+            android:background="@drawable/bg_just_ripple"
+            android:checkable="true"
+            android:clickable="true"
+            android:drawableEnd="@drawable/marcel_toggle_selector"
+            android:drawableTint="@color/colorPrimary"
+            android:focusable="true"
+            android:gravity="start|center_vertical"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:tag="SjN"
+            android:text="@string/sjn"
+            app:cornerRadius="0dp"
+            app:iconPadding="8dp" />
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <com.marcel7126.rozvrhdpg.CheckableButton
+            android:textAllCaps="false"
+            android:id="@+id/btnSpanelskaKonverzace"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/transparent"
+            android:background="@drawable/bg_just_ripple"
+            android:checkable="true"
+            android:clickable="true"
+            android:drawableEnd="@drawable/marcel_toggle_selector"
+            android:drawableTint="@color/colorPrimary"
+            android:focusable="true"
+            android:gravity="start|center_vertical"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:tag="Sk"
+            android:text="@string/sk"
+            app:cornerRadius="0dp"
+            app:iconPadding="8dp" />
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <com.marcel7126.rozvrhdpg.CheckableButton
+            android:textAllCaps="false"
+            android:id="@+id/btnFrancouzskyJazykNepovinny"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/transparent"
+            android:background="@drawable/bg_just_ripple"
+            android:checkable="true"
+            android:clickable="true"
+            android:drawableEnd="@drawable/marcel_toggle_selector"
+            android:drawableTint="@color/colorPrimary"
+            android:focusable="true"
+            android:gravity="start|center_vertical"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:tag="FjN"
+            android:text="@string/fjn"
+            app:cornerRadius="0dp"
+            app:iconPadding="8dp" />
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <com.marcel7126.rozvrhdpg.CheckableButton
+            android:textAllCaps="false"
+            android:id="@+id/btnLatina"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/transparent"
+            android:background="@drawable/bg_just_ripple"
+            android:checkable="true"
+            android:clickable="true"
+            android:drawableEnd="@drawable/marcel_toggle_selector"
+            android:drawableTint="@color/colorPrimary"
+            android:focusable="true"
+            android:gravity="start|center_vertical"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:tag="La"
+            android:text="@string/la"
+            app:cornerRadius="0dp"
+            app:iconPadding="8dp" />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
+        android:textSize="12sp"
+        android:textAllCaps="true"
+        android:text="obcan" />
+    <LinearLayout
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/settings_button_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.marcel7126.rozvrhdpg.CheckableButton
+            android:textAllCaps="false"
+            android:id="@+id/btnObcanskaVychova"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/transparent"
+            android:background="@drawable/bg_just_ripple"
+            android:checkable="true"
+            android:clickable="true"
+            android:drawableEnd="@drawable/marcel_toggle_selector"
+            android:drawableTint="@color/colorPrimary"
+            android:focusable="true"
+            android:gravity="start|center_vertical"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:tag="Ov"
+            android:text="@string/ov"
+            app:cornerRadius="0dp"
+            app:iconPadding="8dp" />
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <com.marcel7126.rozvrhdpg.CheckableButton
+            android:textAllCaps="false"
+            android:id="@+id/btnPravoPolitologie"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/transparent"
+            android:background="@drawable/bg_just_ripple"
+            android:checkable="true"
+            android:clickable="true"
+            android:drawableEnd="@drawable/marcel_toggle_selector"
+            android:drawableTint="@color/colorPrimary"
+            android:focusable="true"
+            android:gravity="start|center_vertical"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:tag="Pp"
+            android:text="@string/pp"
+            app:cornerRadius="0dp"
+            app:iconPadding="8dp" />
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <com.marcel7126.rozvrhdpg.CheckableButton
+            android:textAllCaps="false"
+            android:id="@+id/btnEvropskeSouvislosti"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/transparent"
+            android:background="@drawable/bg_just_ripple"
+            android:checkable="true"
+            android:clickable="true"
+            android:drawableEnd="@drawable/marcel_toggle_selector"
+            android:drawableTint="@color/colorPrimary"
+            android:focusable="true"
+            android:gravity="start|center_vertical"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:tag="Evs"
+            android:text="@string/evs"
+            app:cornerRadius="0dp"
+            app:iconPadding="8dp" />
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <com.marcel7126.rozvrhdpg.CheckableButton
+            android:textAllCaps="false"
+            android:id="@+id/btnEkonomie"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/transparent"
+            android:background="@drawable/bg_just_ripple"
+            android:checkable="true"
+            android:clickable="true"
+            android:drawableEnd="@drawable/marcel_toggle_selector"
+            android:drawableTint="@color/colorPrimary"
+            android:focusable="true"
+            android:gravity="start|center_vertical"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:tag="Ek"
+            android:text="@string/ek"
+            app:cornerRadius="0dp"
+            app:iconPadding="8dp" />
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <com.marcel7126.rozvrhdpg.CheckableButton
+            android:textAllCaps="false"
+            android:id="@+id/btnPraktickaEkonomie"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/transparent"
+            android:background="@drawable/bg_just_ripple"
+            android:checkable="true"
+            android:clickable="true"
+            android:drawableEnd="@drawable/marcel_toggle_selector"
+            android:drawableTint="@color/colorPrimary"
+            android:focusable="true"
+            android:gravity="start|center_vertical"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:tag="PrE"
+            android:text="@string/pre"
+            app:cornerRadius="0dp"
+            app:iconPadding="8dp" />
+
+    </LinearLayout>
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
+        android:textSize="12sp"
+        android:textAllCaps="true"
+        android:text="@string/matematicke" />
+    <LinearLayout
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/settings_button_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.marcel7126.rozvrhdpg.CheckableButton
+            android:textAllCaps="false"
+            android:id="@+id/btnMatematika"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/transparent"
+            android:background="@drawable/bg_just_ripple"
+            android:checkable="true"
+            android:clickable="true"
+            android:drawableEnd="@drawable/marcel_toggle_selector"
+            android:drawableTint="@color/colorPrimary"
+            android:focusable="true"
+            android:gravity="start|center_vertical"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:tag="M"
+            android:text="@string/m"
+            app:cornerRadius="0dp"
+            app:iconPadding="8dp" />
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <com.marcel7126.rozvrhdpg.CheckableButton
+            android:textAllCaps="false"
+            android:id="@+id/btnMatematikaRozsirena"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/transparent"
+            android:background="@drawable/bg_just_ripple"
+            android:checkable="true"
+            android:clickable="true"
+            android:drawableEnd="@drawable/marcel_toggle_selector"
+            android:drawableTint="@color/colorPrimary"
+            android:focusable="true"
+            android:gravity="start|center_vertical"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:tag="Mr"
+            android:text="@string/mr"
+            app:cornerRadius="0dp"
+            app:iconPadding="8dp" />
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <com.marcel7126.rozvrhdpg.CheckableButton
+            android:textAllCaps="false"
+            android:id="@+id/btnDeskriptivniGeometrie"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/transparent"
+            android:background="@drawable/bg_just_ripple"
+            android:checkable="true"
+            android:clickable="true"
+            android:drawableEnd="@drawable/marcel_toggle_selector"
+            android:drawableTint="@color/colorPrimary"
+            android:focusable="true"
+            android:gravity="start|center_vertical"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:tag="Dg"
+            android:text="@string/dg"
+            app:cornerRadius="0dp"
+            app:iconPadding="8dp" />
+
+
+    </LinearLayout>
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
+        android:textSize="12sp"
+        android:textAllCaps="true"
+        android:text="biologie" />
+    <LinearLayout
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/settings_button_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.marcel7126.rozvrhdpg.CheckableButton
+            android:textAllCaps="false"
+            android:id="@+id/btnBiologie"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/transparent"
+            android:background="@drawable/bg_just_ripple"
+            android:checkable="true"
+            android:clickable="true"
+            android:drawableEnd="@drawable/marcel_toggle_selector"
+            android:drawableTint="@color/colorPrimary"
+            android:focusable="true"
+            android:gravity="start|center_vertical"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:tag="Bi"
+            android:text="@string/bi"
+            app:cornerRadius="0dp"
+            app:iconPadding="8dp" />
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <com.marcel7126.rozvrhdpg.CheckableButton
+            android:textAllCaps="false"
+            android:id="@+id/btnBiologieRozsirena"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/transparent"
+            android:background="@drawable/bg_just_ripple"
+            android:checkable="true"
+            android:clickable="true"
+            android:drawableEnd="@drawable/marcel_toggle_selector"
+            android:drawableTint="@color/colorPrimary"
+            android:focusable="true"
+            android:gravity="start|center_vertical"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:tag="BiR"
+            android:text="@string/bir"
+            app:cornerRadius="0dp"
+            app:iconPadding="8dp" />
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <com.marcel7126.rozvrhdpg.CheckableButton
+            android:textAllCaps="false"
+            android:id="@+id/btnBiologieZakladni"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/transparent"
+            android:background="@drawable/bg_just_ripple"
+            android:checkable="true"
+            android:clickable="true"
+            android:drawableEnd="@drawable/marcel_toggle_selector"
+            android:drawableTint="@color/colorPrimary"
+            android:focusable="true"
+            android:gravity="start|center_vertical"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:tag="BiZ"
+            android:text="@string/biz"
+            app:cornerRadius="0dp"
+            app:iconPadding="8dp" />
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <com.marcel7126.rozvrhdpg.CheckableButton
+            android:textAllCaps="false"
+            android:id="@+id/btnEvolucniBiologie"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/transparent"
+            android:background="@drawable/bg_just_ripple"
+            android:checkable="true"
+            android:clickable="true"
+            android:drawableEnd="@drawable/marcel_toggle_selector"
+            android:drawableTint="@color/colorPrimary"
+            android:focusable="true"
+            android:gravity="start|center_vertical"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:tag="Eb"
+            android:text="@string/eb"
+            app:cornerRadius="0dp"
+            app:iconPadding="8dp" />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
+        android:textSize="12sp"
+        android:textAllCaps="true"
+        android:text="cestina a literatura" />
+    <LinearLayout
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/settings_button_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.marcel7126.rozvrhdpg.CheckableButton
+            android:textAllCaps="false"
+            android:id="@+id/btnCeskyJazyk"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/transparent"
+            android:background="@drawable/bg_just_ripple"
+            android:checkable="true"
+            android:clickable="true"
+            android:drawableEnd="@drawable/marcel_toggle_selector"
+            android:drawableTint="@color/colorPrimary"
+            android:focusable="true"
+            android:gravity="start|center_vertical"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:tag="Čj"
+            android:text="@string/cj"
+            app:cornerRadius="0dp"
+            app:iconPadding="8dp" />
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <com.marcel7126.rozvrhdpg.CheckableButton
+            android:textAllCaps="false"
+            android:id="@+id/btnCeskyJazykKomunikace"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/transparent"
+            android:background="@drawable/bg_just_ripple"
+            android:checkable="true"
+            android:clickable="true"
+            android:drawableEnd="@drawable/marcel_toggle_selector"
+            android:drawableTint="@color/colorPrimary"
+            android:focusable="true"
+            android:gravity="start|center_vertical"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:tag="Čjk"
+            android:text="@string/cjk"
+            app:cornerRadius="0dp"
+            app:iconPadding="8dp" />
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <com.marcel7126.rozvrhdpg.CheckableButton
+            android:textAllCaps="false"
+            android:id="@+id/btnCtenarskaGramotnost"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/transparent"
+            android:background="@drawable/bg_just_ripple"
+            android:checkable="true"
+            android:clickable="true"
+            android:drawableEnd="@drawable/marcel_toggle_selector"
+            android:drawableTint="@color/colorPrimary"
+            android:focusable="true"
+            android:gravity="start|center_vertical"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:tag="Cg"
+            android:text="@string/cg"
+            app:cornerRadius="0dp"
+            app:iconPadding="8dp" />
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <com.marcel7126.rozvrhdpg.CheckableButton
+            android:textAllCaps="false"
+            android:id="@+id/btnLiteratura"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/transparent"
+            android:background="@drawable/bg_just_ripple"
+            android:checkable="true"
+            android:clickable="true"
+            android:drawableEnd="@drawable/marcel_toggle_selector"
+            android:drawableTint="@color/colorPrimary"
+            android:focusable="true"
+            android:gravity="start|center_vertical"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:tag="Li"
+            android:text="@string/li"
+            app:cornerRadius="0dp"
+            app:iconPadding="8dp" />
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <com.marcel7126.rozvrhdpg.CheckableButton
+            android:textAllCaps="false"
+            android:id="@+id/btnLiterarniSeminar"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/transparent"
+            android:background="@drawable/bg_just_ripple"
+            android:checkable="true"
+            android:clickable="true"
+            android:drawableEnd="@drawable/marcel_toggle_selector"
+            android:drawableTint="@color/colorPrimary"
+            android:focusable="true"
+            android:gravity="start|center_vertical"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:tag="Ls"
+            android:text="@string/ls"
+            app:cornerRadius="0dp"
+            app:iconPadding="8dp" />
+
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="16dp"
+            android:textSize="12sp"
+            android:textAllCaps="true"
+            android:text="@string/humanitni" />
+    <LinearLayout
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/settings_button_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.marcel7126.rozvrhdpg.CheckableButton
+            android:textAllCaps="false"
+            android:id="@+id/btnDejepis"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/transparent"
+            android:background="@drawable/bg_just_ripple"
+            android:checkable="true"
+            android:checked="false"
+            android:clickable="true"
+            android:drawableEnd="@drawable/marcel_toggle_selector"
+            android:drawableTint="@color/colorPrimary"
+            android:focusable="true"
+            android:gravity="start|center_vertical"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:tag="D"
+            android:text="@string/d"
+            app:cornerRadius="0dp"
+            app:iconPadding="8dp" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+                <com.marcel7126.rozvrhdpg.CheckableButton
+                    android:textAllCaps="false"
+                    android:id="@+id/btnHistorickySeminar"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/transparent"
+                    android:background="@drawable/bg_just_ripple"
+                    android:checkable="true"
+                    android:checked="false"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/marcel_toggle_selector"
+                    android:drawableTint="@color/colorPrimary"
+                    android:focusable="true"
+                    android:gravity="start|center_vertical"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:tag="Hs"
+                    android:text="@string/hs"
+                    app:cornerRadius="0dp"
+                    app:iconPadding="8dp" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+                <com.marcel7126.rozvrhdpg.CheckableButton
+                    android:textAllCaps="false"
+                    android:id="@+id/btnFilozofie"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/transparent"
+                    android:background="@drawable/bg_just_ripple"
+                    android:checkable="true"
+                    android:checked="false"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/marcel_toggle_selector"
+                    android:drawableTint="@color/colorPrimary"
+                    android:focusable="true"
+                    android:gravity="start|center_vertical"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:tag="Fi"
+                    android:text="@string/fi"
+                    app:cornerRadius="0dp"
+                    app:iconPadding="8dp" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+                <com.marcel7126.rozvrhdpg.CheckableButton
+                    android:textAllCaps="false"
+                    android:id="@+id/btnAntropologickySeminar"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/transparent"
+                    android:background="@drawable/bg_just_ripple"
+                    android:checkable="true"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/marcel_toggle_selector"
+                    android:drawableTint="@color/colorPrimary"
+                    android:focusable="true"
+                    android:gravity="start|center_vertical"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:tag="As"
+                    android:text="@string/as_"
+                    app:cornerRadius="0dp"
+                    app:iconPadding="8dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
+        android:textSize="12sp"
+        android:textAllCaps="true"
+                    android:text="@string/prirodni" />
+
+    <LinearLayout
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/settings_button_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+                <com.marcel7126.rozvrhdpg.CheckableButton
+                    android:textAllCaps="false"
+                    android:id="@+id/btnChemie"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/transparent"
+                    android:background="@drawable/bg_just_ripple"
+                    android:checkable="true"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/marcel_toggle_selector"
+                    android:drawableTint="@color/colorPrimary"
+                    android:focusable="true"
+                    android:gravity="start|center_vertical"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:tag="Ch"
+                    android:text="@string/ch"
+                    app:cornerRadius="0dp"
+                    app:iconPadding="8dp" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+                <com.marcel7126.rozvrhdpg.CheckableButton
+                    android:textAllCaps="false"
+                    android:id="@+id/btnBiochemie"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/transparent"
+                    android:background="@drawable/bg_just_ripple"
+                    android:checkable="true"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/marcel_toggle_selector"
+                    android:drawableTint="@color/colorPrimary"
+                    android:focusable="true"
+                    android:gravity="start|center_vertical"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:tag="Bc"
+                    android:text="@string/bc"
+                    app:cornerRadius="0dp"
+                    app:iconPadding="8dp" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+                <com.marcel7126.rozvrhdpg.CheckableButton
+                    android:textAllCaps="false"
+                    android:id="@+id/btnFyzika"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/transparent"
+                    android:background="@drawable/bg_just_ripple"
+                    android:checkable="true"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/marcel_toggle_selector"
+                    android:drawableTint="@color/colorPrimary"
+                    android:focusable="true"
+                    android:gravity="start|center_vertical"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:tag="Fy"
+                    android:text="@string/fy"
+                    app:cornerRadius="0dp"
+                    app:iconPadding="8dp" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+                <com.marcel7126.rozvrhdpg.CheckableButton
+                    android:textAllCaps="false"
+                    android:id="@+id/btnGeologie"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/transparent"
+                    android:background="@drawable/bg_just_ripple"
+                    android:checkable="true"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/marcel_toggle_selector"
+                    android:drawableTint="@color/colorPrimary"
+                    android:focusable="true"
+                    android:gravity="start|center_vertical"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:tag="Ge"
+                    android:text="@string/ge"
+                    app:cornerRadius="0dp"
+                    app:iconPadding="8dp" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+                <com.marcel7126.rozvrhdpg.CheckableButton
+                    android:textAllCaps="false"
+                    android:id="@+id/btnEkologie"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/transparent"
+                    android:background="@drawable/bg_just_ripple"
+                    android:checkable="true"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/marcel_toggle_selector"
+                    android:drawableTint="@color/colorPrimary"
+                    android:focusable="true"
+                    android:gravity="start|center_vertical"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:tag="Eko"
+                    android:text="@string/eko"
+                    app:cornerRadius="0dp"
+                    app:iconPadding="8dp" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+                <com.marcel7126.rozvrhdpg.CheckableButton
+                    android:textAllCaps="false"
+                    android:id="@+id/btnEtologie"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/transparent"
+                    android:background="@drawable/bg_just_ripple"
+                    android:checkable="true"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/marcel_toggle_selector"
+                    android:drawableTint="@color/colorPrimary"
+                    android:focusable="true"
+                    android:gravity="start|center_vertical"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:tag="Eto"
+                    android:text="@string/eto"
+                    app:cornerRadius="0dp"
+                    app:iconPadding="8dp" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+                <com.marcel7126.rozvrhdpg.CheckableButton
+                    android:textAllCaps="false"
+                    android:id="@+id/btnAplikovanaFyzika"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/transparent"
+                    android:background="@drawable/bg_just_ripple"
+                    android:checkable="true"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/marcel_toggle_selector"
+                    android:drawableTint="@color/colorPrimary"
+                    android:focusable="true"
+                    android:gravity="start|center_vertical"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:tag="Af"
+                    android:text="@string/af"
+                    app:cornerRadius="0dp"
+                    app:iconPadding="8dp" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+                <com.marcel7126.rozvrhdpg.CheckableButton
+                    android:textAllCaps="false"
+                    android:id="@+id/btnMladiDebrujari"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/transparent"
+                    android:background="@drawable/bg_just_ripple"
+                    android:checkable="true"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/marcel_toggle_selector"
+                    android:drawableTint="@color/colorPrimary"
+                    android:focusable="true"
+                    android:gravity="start|center_vertical"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:tag="MD"
+                    android:text="@string/md"
+                    app:cornerRadius="0dp"
+                    app:iconPadding="8dp" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+                <com.marcel7126.rozvrhdpg.CheckableButton
+                    android:textAllCaps="false"
+                    android:id="@+id/btnMaterialyMereni"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/transparent"
+                    android:background="@drawable/bg_just_ripple"
+                    android:checkable="true"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/marcel_toggle_selector"
+                    android:drawableTint="@color/colorPrimary"
+                    android:focusable="true"
+                    android:gravity="start|center_vertical"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:tag="Mm"
+                    android:text="@string/mm"
+                    app:cornerRadius="0dp"
+                    app:iconPadding="8dp" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+                <com.marcel7126.rozvrhdpg.CheckableButton
+                    android:textAllCaps="false"
+                    android:id="@+id/btnLTBiologie"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/transparent"
+                    android:background="@drawable/bg_just_ripple"
+                    android:checkable="true"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/marcel_toggle_selector"
+                    android:drawableTint="@color/colorPrimary"
+                    android:focusable="true"
+                    android:gravity="start|center_vertical"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:tag="LtB"
+                    android:text="@string/ltb"
+                    app:cornerRadius="0dp"
+                    app:iconPadding="8dp" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+                <com.marcel7126.rozvrhdpg.CheckableButton
+                    android:textAllCaps="false"
+                    android:id="@+id/btnLTChemie"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/transparent"
+                    android:background="@drawable/bg_just_ripple"
+                    android:checkable="true"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/marcel_toggle_selector"
+                    android:drawableTint="@color/colorPrimary"
+                    android:focusable="true"
+                    android:gravity="start|center_vertical"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:tag="LtV"
+                    android:text="@string/ltc"
+                    app:cornerRadius="0dp"
+                    app:iconPadding="8dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
+        android:textSize="12sp"
+        android:textAllCaps="true"
+                    android:text="@string/vychovy" />
+
+    <LinearLayout
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/settings_button_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+                <com.marcel7126.rozvrhdpg.CheckableButton
+                    android:textAllCaps="false"
+                    android:id="@+id/btnDramatickaVychova"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/transparent"
+                    android:background="@drawable/bg_just_ripple"
+                    android:checkable="true"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/marcel_toggle_selector"
+                    android:drawableTint="@color/colorPrimary"
+                    android:focusable="true"
+                    android:gravity="start|center_vertical"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:tag="Dv"
+                    android:text="@string/dv"
+                    app:cornerRadius="0dp"
+                    app:iconPadding="8dp" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+                <com.marcel7126.rozvrhdpg.CheckableButton
+                    android:textAllCaps="false"
+                    android:id="@+id/btnHudebniVychova"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/transparent"
+                    android:background="@drawable/bg_just_ripple"
+                    android:checkable="true"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/marcel_toggle_selector"
+                    android:drawableTint="@color/colorPrimary"
+                    android:focusable="true"
+                    android:gravity="start|center_vertical"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:tag="Hv"
+                    android:text="@string/hv"
+                    app:cornerRadius="0dp"
+                    app:iconPadding="8dp" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+                <com.marcel7126.rozvrhdpg.CheckableButton
+                    android:textAllCaps="false"
+                    android:id="@+id/btnTelesnaVychova"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/transparent"
+                    android:background="@drawable/bg_just_ripple"
+                    android:checkable="true"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/marcel_toggle_selector"
+                    android:drawableTint="@color/colorPrimary"
+                    android:focusable="true"
+                    android:gravity="start|center_vertical"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:tag="Tv"
+                    android:text="@string/tv"
+                    app:cornerRadius="0dp"
+                    app:iconPadding="8dp" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+                <com.marcel7126.rozvrhdpg.CheckableButton
+                    android:textAllCaps="false"
+                    android:id="@+id/btnVytvarnaVychova"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/transparent"
+                    android:background="@drawable/bg_just_ripple"
+                    android:checkable="true"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/marcel_toggle_selector"
+                    android:drawableTint="@color/colorPrimary"
+                    android:focusable="true"
+                    android:gravity="start|center_vertical"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:tag="Vv"
+                    android:text="@string/vv"
+                    app:cornerRadius="0dp"
+                    app:iconPadding="8dp" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+                <com.marcel7126.rozvrhdpg.CheckableButton
+                    android:textAllCaps="false"
+                    android:id="@+id/btnVychovaKeZdravi"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/transparent"
+                    android:background="@drawable/bg_just_ripple"
+                    android:checkable="true"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/marcel_toggle_selector"
+                    android:drawableTint="@color/colorPrimary"
+                    android:focusable="true"
+                    android:gravity="start|center_vertical"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:tag="Vz"
+                    android:text="@string/vz"
+                    app:cornerRadius="0dp"
+                    app:iconPadding="8dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
+        android:textSize="12sp"
+        android:textAllCaps="true"
+                    android:text="@string/it" />
+
+    <LinearLayout
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/settings_button_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+                <com.marcel7126.rozvrhdpg.CheckableButton
+                    android:textAllCaps="false"
+                    android:id="@+id/btnInformatika"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/transparent"
+                    android:background="@drawable/bg_just_ripple"
+                    android:checkable="true"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/marcel_toggle_selector"
+                    android:drawableTint="@color/colorPrimary"
+                    android:focusable="true"
+                    android:gravity="start|center_vertical"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:tag="If"
+                    android:text="@string/if_"
+                    app:cornerRadius="0dp"
+                    app:iconPadding="8dp" />
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+                <com.marcel7126.rozvrhdpg.CheckableButton
+                    android:textAllCaps="false"
+                    android:id="@+id/btnDigitalniTechnika"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/transparent"
+                    android:background="@drawable/bg_just_ripple"
+                    android:checkable="true"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/marcel_toggle_selector"
+                    android:drawableTint="@color/colorPrimary"
+                    android:focusable="true"
+                    android:gravity="start|center_vertical"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:tag="Dt"
+                    android:text="@string/dt"
+                    app:cornerRadius="0dp"
+                    app:iconPadding="8dp" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+                <com.marcel7126.rozvrhdpg.CheckableButton
+                    android:textAllCaps="false"
+                    android:id="@+id/btnProgramovani"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/transparent"
+                    android:background="@drawable/bg_just_ripple"
+                    android:checkable="true"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/marcel_toggle_selector"
+                    android:drawableTint="@color/colorPrimary"
+                    android:focusable="true"
+                    android:gravity="start|center_vertical"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:tag="Pg"
+                    android:text="@string/pg"
+                    app:cornerRadius="0dp"
+                    app:iconPadding="8dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
+        android:textSize="12sp"
+        android:textAllCaps="true"
+                    android:text="@string/zemepis" />
+    <LinearLayout
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/settings_button_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+                <com.marcel7126.rozvrhdpg.CheckableButton
+                    android:textAllCaps="false"
+                    android:id="@+id/btnZemepis"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/transparent"
+                    android:background="@drawable/bg_just_ripple"
+                    android:checkable="true"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/marcel_toggle_selector"
+                    android:drawableTint="@color/colorPrimary"
+                    android:focusable="true"
+                    android:gravity="start|center_vertical"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:tag="Ze"
+                    android:text="@string/ze"
+                    app:cornerRadius="0dp"
+                    app:iconPadding="8dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
+        android:textSize="12sp"
+        android:textAllCaps="true"
+                    android:text="@string/seminare" />
+
+    <LinearLayout
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/settings_button_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+                <!-- TODO: remove duplicate anthropology seminar -->
+                <com.marcel7126.rozvrhdpg.CheckableButton
+                    android:textAllCaps="false"
+                    android:id="@+id/btnAntropologickySeminar0"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/transparent"
+                    android:background="@drawable/bg_just_ripple"
+                    android:checkable="true"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/marcel_toggle_selector"
+                    android:drawableTint="@color/colorPrimary"
+                    android:focusable="true"
+                    android:gravity="start|center_vertical"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:tag="As"
+                    android:text="@string/as_"
+                    app:cornerRadius="0dp"
+                    app:iconPadding="8dp" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+                <com.marcel7126.rozvrhdpg.CheckableButton
+                    android:textAllCaps="false"
+                    android:id="@+id/btnSpolecenskovedniSeminar"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/transparent"
+                    android:background="@drawable/bg_just_ripple"
+                    android:checkable="true"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/marcel_toggle_selector"
+                    android:drawableTint="@color/colorPrimary"
+                    android:focusable="true"
+                    android:gravity="start|center_vertical"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:tag="Svs"
+                    android:text="@string/svs"
+                    app:cornerRadius="0dp"
+                    app:iconPadding="8dp" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+                <com.marcel7126.rozvrhdpg.CheckableButton
+                    android:textAllCaps="false"
+                    android:id="@+id/btnVytvarnySeminar"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/transparent"
+                    android:background="@drawable/bg_just_ripple"
+                    android:checkable="true"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/marcel_toggle_selector"
+                    android:drawableTint="@color/colorPrimary"
+                    android:focusable="true"
+                    android:gravity="start|center_vertical"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:tag="Vs"
+                    android:text="@string/vs"
+                    app:cornerRadius="0dp"
+                    app:iconPadding="8dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
+        android:textSize="12sp"
+        android:textAllCaps="true"
+                    android:text="@string/kultura_umeni" />
+
+    <LinearLayout
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/settings_button_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+                <com.marcel7126.rozvrhdpg.CheckableButton
+                    android:textAllCaps="false"
+                    android:id="@+id/btnKek"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/transparent"
+                    android:background="@drawable/bg_just_ripple"
+                    android:checkable="true"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/marcel_toggle_selector"
+                    android:drawableTint="@color/colorPrimary"
+                    android:focusable="true"
+                    android:gravity="start|center_vertical"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:tag="Kek"
+                    android:text="@string/kek"
+                    app:cornerRadius="0dp"
+                    app:iconPadding="8dp" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+                <com.marcel7126.rozvrhdpg.CheckableButton
+                    android:textAllCaps="false"
+                    android:id="@+id/btnVytvarnaEstetika"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/transparent"
+                    android:background="@drawable/bg_just_ripple"
+                    android:checkable="true"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/marcel_toggle_selector"
+                    android:drawableTint="@color/colorPrimary"
+                    android:focusable="true"
+                    android:gravity="start|center_vertical"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:tag="Ve"
+                    android:text="@string/ve"
+                    app:cornerRadius="0dp"
+                    app:iconPadding="8dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
+        android:textSize="12sp"
+        android:textAllCaps="true"
+                    android:text="@string/other" />
+
+    <LinearLayout
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/settings_button_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+                <com.marcel7126.rozvrhdpg.CheckableButton
+                    android:textAllCaps="false"
+                    android:id="@+id/btnDebatniKlub"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/transparent"
+                    android:background="@drawable/bg_just_ripple"
+                    android:checkable="true"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/marcel_toggle_selector"
+                    android:drawableTint="@color/colorPrimary"
+                    android:focusable="true"
+                    android:gravity="start|center_vertical"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:tag="Dk"
+                    android:text="@string/dk"
+                    app:cornerRadius="0dp"
+                    app:iconPadding="8dp" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+                <com.marcel7126.rozvrhdpg.CheckableButton
+                    android:textAllCaps="false"
+                    android:id="@+id/btnStopa"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/transparent"
+                    android:background="@drawable/bg_just_ripple"
+                    android:checkable="true"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/marcel_toggle_selector"
+                    android:drawableTint="@color/colorPrimary"
+                    android:focusable="true"
+                    android:gravity="start|center_vertical"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:tag="DS"
+                    android:text="@string/ds"
+                    app:cornerRadius="0dp"
+                    app:iconPadding="8dp" />
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+                <com.marcel7126.rozvrhdpg.CheckableButton
+                    android:textAllCaps="false"
+                    android:id="@+id/btnSkolniPsycholog"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/transparent"
+                    android:background="@drawable/bg_just_ripple"
+                    android:checkable="true"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/marcel_toggle_selector"
+                    android:drawableTint="@color/colorPrimary"
+                    android:focusable="true"
+                    android:gravity="start|center_vertical"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:tag="SP"
+                    android:text="@string/sp"
+                    app:cornerRadius="0dp"
+                    app:iconPadding="8dp" />
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+                <com.marcel7126.rozvrhdpg.CheckableButton
+                    android:textAllCaps="false"
+                    android:id="@+id/btnPsychologie"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/transparent"
+                    android:background="@drawable/bg_just_ripple"
+                    android:checkable="true"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/marcel_toggle_selector"
+                    android:drawableTint="@color/colorPrimary"
+                    android:focusable="true"
+                    android:gravity="start|center_vertical"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:tag="Ps"
+                    android:text="@string/ps"
+                    app:cornerRadius="0dp"
+                    app:iconPadding="8dp" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+                <com.marcel7126.rozvrhdpg.CheckableButton
+                    android:textAllCaps="false"
+                    android:id="@+id/btnRetorika"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/transparent"
+                    android:background="@drawable/bg_just_ripple"
+                    android:checkable="true"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/marcel_toggle_selector"
+                    android:drawableTint="@color/colorPrimary"
+                    android:focusable="true"
+                    android:gravity="start|center_vertical"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:tag="Re"
+                    android:text="@string/re"
+                    app:cornerRadius="0dp"
+                    app:iconPadding="8dp" />
+</LinearLayout>
+
+            </LinearLayout>
+    </ScrollView>
+    <TextView
+        android:id="@+id/tvAtutoSave"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/marcel_Primary"
+        android:gravity="center"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="@string/auto_save"
+        android:textColor="@color/white_smoke"
+        android:textSize="16dp"
+        android:textStyle="italic"
+        app:cornerRadius="0dp"
+        app:iconPadding="8dp" />
+</LinearLayout>
